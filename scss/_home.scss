@@ -1,0 +1,114 @@
+.padreHome{
+    height: calc(90vh - 120px);
+    .contenedorHome{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../assets/portada.jpg);
+        background-size: cover;
+        background-position: center;
+        .homeBanner{
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            .estilosNombre{
+                margin: 0;
+                height: 70%;
+                padding:2% 0 20px 70px;
+
+                .nombrePrincipal{
+                    color: hsl(0, 0%, 30%);
+                    font-size: 8rem;
+                    font-weight: bold;
+                    font-family: monospace;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    background: linear-gradient(
+                        to right,
+                        hsl(0, 0%, 30%),
+                        hsl(0, 0%, 100%),
+                        hsl(0,0%, 30%)
+                    );
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    animation: shine 3s infinite linear;
+                    
+                    @keyframes shine {
+                        0%{
+                            background-position: 0;
+                        }
+                        60%{
+                            background-position: 600px;
+                        }
+                        100%{
+                            background-position: 600px;
+                        }
+                        
+                    }
+                }
+                .subtitulo{
+                    color:gray;
+                    font-size: large;
+                    text-align: justify;
+                    margin: 3% 0 0 15px;
+                    width: 50%;
+                }
+                .botonHome{
+                    width: min-content;
+                    margin:2% 0 0 20%;
+                }
+            }
+            .contactoHome{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                bottom: 100px;
+                right: 120px;
+                height: 200px;
+                width: 350px;
+                border: solid white;
+                .numeroContacto{
+                    color: #fff;
+                }
+                .textoContacto{
+                    color: aliceblue;
+                    text-align: center;
+                    margin-top: 8%;
+                }
+            }
+        }
+    }
+}
+.contenidoHome{
+    background-color: yellow;
+    padding:20px 100px 10px 100px;
+    .contenedorContenido{
+        background-color: aqua;
+        padding: 0;
+        text-align: center;
+        .servicioPrincipal{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+            img{
+                width: 100%;
+                height: 500px;
+            }
+        }
+        .serviciosSecundarios{
+            display: flex;
+            padding: 0;
+            .servicioSecundario1{
+                margin:0 15px 0 0;
+            }
+            .servicioSecundario2{
+                margin:0 0 0 15px;
+            }
+        }
+    }
+}

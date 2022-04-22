@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html body {
+  font-family: 'PT Mono', monospace;
+  font-family: 'Prompt', sans-serif;
+  font-family: 'Inconsolata', monospace;
+  font-family: 'Encode Sans SC', sans-serif;
+  background-color: white;
+  margin: 0;
+  padding: 0; }
+
+.padreHeader {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+  .padreHeader .contenedorHeader {
+    background-color: black;
+    height: 120px; }
+    .padreHeader .contenedorHeader .headerLogo {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .padreHeader .contenedorHeader .headerSearch {
+      display: flex;
+      padding: 0;
+      width: 100%; }
+      .padreHeader .contenedorHeader .headerSearch .navPadre {
+        width: 80%;
+        margin: auto; }
+        .padreHeader .contenedorHeader .headerSearch .navPadre .estilosNav {
+          display: flex;
+          justify-content: space-evenly;
+          width: 100%;
+          align-items: center; }
+          .padreHeader .contenedorHeader .headerSearch .navPadre .estilosNav .nav-item {
+            position: relative;
+            list-style: none;
+            display: inline-block; }
+            .padreHeader .contenedorHeader .headerSearch .navPadre .estilosNav .nav-item .nav-link {
+              text-decoration: none;
+              color: #fff;
+              text-transform: uppercase; }
+            .padreHeader .contenedorHeader .headerSearch .navPadre .estilosNav .nav-item::after {
+              content: '';
+              height: 3px;
+              width: 0%;
+              background: brown;
+              position: absolute;
+              left: 0;
+              bottom: -10px;
+              transition: 0.5s; }
+            .padreHeader .contenedorHeader .headerSearch .navPadre .estilosNav .nav-item:hover::after {
+              width: 100%; }
+
+.padreHome {
+  height: calc(90vh - 120px); }
+  .padreHome .contenedorHome {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../assets/portada.jpg);
+    background-size: cover;
+    background-position: center; }
+    .padreHome .contenedorHome .homeBanner {
+      display: flex;
+      flex-direction: column;
+      margin: 0; }
+      .padreHome .contenedorHome .homeBanner .estilosNombre {
+        margin: 0;
+        height: 70%;
+        padding: 2% 0 20px 70px; }
+        .padreHome .contenedorHome .homeBanner .estilosNombre .nombrePrincipal {
+          color: #4d4d4d;
+          font-size: 8rem;
+          font-weight: bold;
+          font-family: monospace;
+          cursor: pointer;
+          text-transform: uppercase;
+          background: linear-gradient(to right, #4d4d4d, white, #4d4d4d);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          animation: shine 3s infinite linear; }
+
+@keyframes shine {
+  0% {
+    background-position: 0; }
+  60% {
+    background-position: 600px; }
+  100% {
+    background-position: 600px; } }
+        .padreHome .contenedorHome .homeBanner .estilosNombre .subtitulo {
+          color: gray;
+          font-size: large;
+          text-align: justify;
+          margin: 3% 0 0 15px;
+          width: 50%; }
+        .padreHome .contenedorHome .homeBanner .estilosNombre .botonHome {
+          width: min-content;
+          margin: 2% 0 0 20%; }
+      .padreHome .contenedorHome .homeBanner .contactoHome {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 100px;
+        right: 120px;
+        height: 200px;
+        width: 350px;
+        border: solid white; }
+        .padreHome .contenedorHome .homeBanner .contactoHome .numeroContacto {
+          color: #fff; }
+        .padreHome .contenedorHome .homeBanner .contactoHome .textoContacto {
+          color: aliceblue;
+          text-align: center;
+          margin-top: 8%; }
+
+.contenidoHome {
+  background-color: yellow;
+  padding: 20px 100px 10px 100px; }
+  .contenidoHome .contenedorContenido {
+    background-color: aqua;
+    padding: 0;
+    text-align: center; }
+    .contenidoHome .contenedorContenido .servicioPrincipal {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0; }
+      .contenidoHome .contenedorContenido .servicioPrincipal img {
+        width: 100%;
+        height: 500px; }
+    .contenidoHome .contenedorContenido .serviciosSecundarios {
+      display: flex;
+      padding: 0; }
+      .contenidoHome .contenedorContenido .serviciosSecundarios .servicioSecundario1 {
+        margin: 0 15px 0 0; }
+      .contenidoHome .contenedorContenido .serviciosSecundarios .servicioSecundario2 {
+        margin: 0 0 0 15px; }

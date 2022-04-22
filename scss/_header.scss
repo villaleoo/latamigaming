@@ -1,0 +1,56 @@
+.padreHeader{
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+    .contenedorHeader{
+        background-color: black;
+        height: 120px;
+        .headerLogo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .headerSearch{
+            display: flex;
+            padding: 0;
+            width: 100%;
+            .navPadre{
+                width: 80%;
+                margin: auto;
+                .estilosNav{
+                    display: flex;
+                    justify-content: space-evenly;
+                    width: 100%;
+                    align-items: center;
+                    
+                     .nav-item{
+                        position: relative;
+                        list-style: none;
+                        display: inline-block;
+                        .nav-link{
+                            text-decoration: none;
+                            color: #fff;
+                            text-transform: uppercase;
+                        }
+                        &::after{
+                            content: '';
+                            height: 3px;
+                            width: 0%;
+                            background: brown;
+                            position: absolute;
+                            left: 0;
+                            bottom: -10px;
+                            transition: 0.5s;
+                        }
+                        &:hover::after{
+                            width: 100%;
+                        }
+                        
+                    }
+                   
+                }
+            }
+            
+        }
+    }
+}
