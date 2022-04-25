@@ -1,5 +1,6 @@
 .padreHome{
-    height: calc(90vh - 120px);
+    margin-top: 120px;
+    height: calc(94vh - 120px);
     .contenedorHome{
         width: 100%;
         height: 100%;
@@ -55,7 +56,8 @@
                     width: 50%;
                 }
                 .botonHome{
-                    width: min-content;
+                    width: 200px;
+                    height: 80px;
                     margin:2% 0 0 20%;
                 }
             }
@@ -83,12 +85,19 @@
     }
 }
 .contenidoHome{
-    background-color: yellow;
-    padding:20px 100px 10px 100px;
+    padding:10px 100px 0px 100px;
+    p{
+        color:rgba(245, 245, 245, 0.541);
+    }
     .contenedorContenido{
-        background-color: aqua;
+        h2{
+            margin-bottom: 100px;
+            margin-top: 20px;
+            font-weight: bolder;
+        }
         padding: 0;
         text-align: center;
+        margin: 0;
         .servicioPrincipal{
             display: flex;
             flex-direction: column;
@@ -99,10 +108,19 @@
                 width: 100%;
                 height: 500px;
             }
+            h4{
+                margin: 20px 0;
+                font-weight: bolder;
+            }
+            
         }
         .serviciosSecundarios{
             display: flex;
             padding: 0;
+            h5{
+                margin: 20px 0;
+                font-weight: bolder;
+            }
             .servicioSecundario1{
                 margin:0 15px 0 0;
             }

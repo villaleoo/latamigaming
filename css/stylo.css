@@ -8,55 +8,92 @@ html body {
   font-family: 'Prompt', sans-serif;
   font-family: 'Inconsolata', monospace;
   font-family: 'Encode Sans SC', sans-serif;
-  background-color: white;
+  background-color: black;
   margin: 0;
   padding: 0; }
+  html body h2, html body h4, html body h5, html body .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo p, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo html body p {
+    color: whitesmoke; }
+  html body .detallesTitulos {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-style: solid;
+    border-radius: 10px;
+    color: rgba(255, 0, 0, 0.37);
+    width: 10%; }
 
-.padreHeader {
+.contenedorPadre {
   margin: 0;
   padding: 0;
   overflow-x: hidden; }
-  .padreHeader .contenedorHeader {
+  .contenedorPadre .contenedorHeader {
     background-color: black;
-    height: 120px; }
-    .padreHeader .contenedorHeader .headerLogo {
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    margin: 0; }
+    .contenedorPadre .contenedorHeader .headerLogo {
       display: flex;
       justify-content: center;
       align-items: center; }
-    .padreHeader .contenedorHeader .headerSearch {
+      .contenedorPadre .contenedorHeader .headerLogo img {
+        width: 80px;
+        height: 80px; }
+      .contenedorPadre .contenedorHeader .headerLogo .logoLatam {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        position: absolute; }
+        .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo h2, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo html body h4, html body .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo h4, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo html body h5, html body .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo h5, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo p {
+          position: absolute;
+          width: 250px;
+          top: 8px;
+          left: 85px;
+          right: 0;
+          margin: auto; }
+        .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo p {
+          top: 40px;
+          left: 100px; }
+        .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo span {
+          color: #6262bd; }
+    .contenedorPadre .contenedorHeader .headerSearch {
       display: flex;
       padding: 0;
       width: 100%; }
-      .padreHeader .contenedorHeader .headerSearch .navPadre {
+      .contenedorPadre .contenedorHeader .headerSearch .navPadre {
         width: 80%;
         margin: auto; }
-        .padreHeader .contenedorHeader .headerSearch .navPadre .estilosNav {
+        .contenedorPadre .contenedorHeader .headerSearch .navPadre .estilosNav {
           display: flex;
           justify-content: space-evenly;
           width: 100%;
           align-items: center; }
-          .padreHeader .contenedorHeader .headerSearch .navPadre .estilosNav .nav-item {
+          .contenedorPadre .contenedorHeader .headerSearch .navPadre .estilosNav .nav-item {
             position: relative;
             list-style: none;
             display: inline-block; }
-            .padreHeader .contenedorHeader .headerSearch .navPadre .estilosNav .nav-item .nav-link {
+            .contenedorPadre .contenedorHeader .headerSearch .navPadre .estilosNav .nav-item .nav-link {
               text-decoration: none;
               color: #fff;
               text-transform: uppercase; }
-            .padreHeader .contenedorHeader .headerSearch .navPadre .estilosNav .nav-item::after {
+            .contenedorPadre .contenedorHeader .headerSearch .navPadre .estilosNav .nav-item::after {
               content: '';
               height: 3px;
               width: 0%;
-              background: brown;
+              background: rgba(255, 0, 0, 0.37);
               position: absolute;
               left: 0;
               bottom: -10px;
               transition: 0.5s; }
-            .padreHeader .contenedorHeader .headerSearch .navPadre .estilosNav .nav-item:hover::after {
+            .contenedorPadre .contenedorHeader .headerSearch .navPadre .estilosNav .nav-item:hover::after {
               width: 100%; }
 
 .padreHome {
-  height: calc(90vh - 120px); }
+  margin-top: 120px;
+  height: calc(94vh - 120px); }
   .padreHome .contenedorHome {
     width: 100%;
     height: 100%;
@@ -99,7 +136,8 @@ html body {
           margin: 3% 0 0 15px;
           width: 50%; }
         .padreHome .contenedorHome .homeBanner .estilosNombre .botonHome {
-          width: min-content;
+          width: 200px;
+          height: 80px;
           margin: 2% 0 0 20%; }
       .padreHome .contenedorHome .homeBanner .contactoHome {
         display: flex;
@@ -120,12 +158,17 @@ html body {
           margin-top: 8%; }
 
 .contenidoHome {
-  background-color: yellow;
-  padding: 20px 100px 10px 100px; }
+  padding: 10px 100px 0px 100px; }
+  .contenidoHome p {
+    color: rgba(245, 245, 245, 0.541); }
   .contenidoHome .contenedorContenido {
-    background-color: aqua;
     padding: 0;
-    text-align: center; }
+    text-align: center;
+    margin: 0; }
+    .contenidoHome .contenedorContenido h2, .contenidoHome .contenedorContenido html body h4, html body .contenidoHome .contenedorContenido h4, .contenidoHome .contenedorContenido html body h5, html body .contenidoHome .contenedorContenido h5, .contenidoHome .contenedorContenido .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo p, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo .contenidoHome .contenedorContenido p {
+      margin-bottom: 100px;
+      margin-top: 20px;
+      font-weight: bolder; }
     .contenidoHome .contenedorContenido .servicioPrincipal {
       display: flex;
       flex-direction: column;
@@ -135,10 +178,88 @@ html body {
       .contenidoHome .contenedorContenido .servicioPrincipal img {
         width: 100%;
         height: 500px; }
+      .contenidoHome .contenedorContenido .servicioPrincipal h4 {
+        margin: 20px 0;
+        font-weight: bolder; }
     .contenidoHome .contenedorContenido .serviciosSecundarios {
       display: flex;
       padding: 0; }
+      .contenidoHome .contenedorContenido .serviciosSecundarios h5 {
+        margin: 20px 0;
+        font-weight: bolder; }
       .contenidoHome .contenedorContenido .serviciosSecundarios .servicioSecundario1 {
         margin: 0 15px 0 0; }
       .contenidoHome .contenedorContenido .serviciosSecundarios .servicioSecundario2 {
         margin: 0 0 0 15px; }
+
+.footer {
+  height: 70vh;
+  background-color: black; }
+  .footer .suscripcion {
+    margin-bottom: 0;
+    width: 100%;
+    height: 45%;
+    background-image: url(../assets/suscribirImg.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%; }
+    .footer .suscripcion .tituloSuscribir {
+      font-size: 50px;
+      font-weight: bold;
+      text-shadow: 0px 5px 5px black;
+      color: white;
+      margin: 0 0 50px 0; }
+    .footer .suscripcion .textoSuscribirse {
+      color: white;
+      text-shadow: 0px 5px 5px black;
+      font-size: large; }
+    .footer .suscripcion .contenedorSuscribirse {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 50%;
+      height: 20%; }
+      .footer .suscripcion .contenedorSuscribirse ::placeholder {
+        color: white;
+        text-shadow: 0px 5px 5px black; }
+      .footer .suscripcion .contenedorSuscribirse .dataSuscribirse {
+        width: 70%;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.637); }
+      .footer .suscripcion .contenedorSuscribirse .botonSuscribir {
+        height: 50px;
+        width: 120px; }
+  .footer .contactoFooter {
+    height: 40%;
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .footer .contactoFooter img {
+      width: 30px;
+      height: 30px; }
+    .footer .contactoFooter .dataFooter {
+      margin-top: 3%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .footer .contactoFooter .dataFooter .textoFooter {
+        color: rgba(255, 255, 255, 0.63); }
+      .footer .contactoFooter .dataFooter h6 {
+        color: white; }
+      .footer .contactoFooter .dataFooter ul {
+        list-style: none; }
+    .footer .contactoFooter .inicio {
+      position: fixed;
+      bottom: 20px;
+      right: 10px; }
+      .footer .contactoFooter .inicio img {
+        height: 50px;
+        width: 50px; }
+  .footer .copyright {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.199); }

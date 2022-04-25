@@ -1,14 +1,46 @@
-.padreHeader{
+.contenedorPadre{
    margin: 0;
    padding: 0;
    overflow-x: hidden;
     .contenedorHeader{
         background-color: black;
         height: 120px;
+        width: 100%;
+        position: fixed;
+        z-index:9999;
+        margin: 0;
         .headerLogo{
             display: flex;
             justify-content: center;
             align-items: center;
+            img{
+                width:80px;
+                height: 80px;
+            }
+            .logoLatam{
+                display: flex;
+                padding: 0;
+                margin: 0;
+                position: absolute;
+                .textoLogo{
+                    h2{
+                        position: absolute;
+                        width: 250px;
+                        top: 8px;
+                        left: 85px;
+                        right: 0;
+                        margin: auto;
+                    }
+                    p{
+                        @extend h2 ;
+                        top:40px;
+                        left: 100px;
+                    }
+                    span{
+                        color:rgb(98, 98, 189);
+                    }
+                }
+            }
         }
         .headerSearch{
             display: flex;
@@ -36,7 +68,7 @@
                             content: '';
                             height: 3px;
                             width: 0%;
-                            background: brown;
+                            background: rgba(255, 0, 0, 0.37);
                             position: absolute;
                             left: 0;
                             bottom: -10px;
