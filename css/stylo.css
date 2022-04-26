@@ -8,11 +8,11 @@ html body {
   font-family: 'Prompt', sans-serif;
   font-family: 'Inconsolata', monospace;
   font-family: 'Encode Sans SC', sans-serif;
-  background-color: black;
+  background-color: white;
   margin: 0;
   padding: 0; }
   html body h2, html body h4, html body h5, html body .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo p, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo html body p {
-    color: whitesmoke; }
+    color: black; }
   html body .detallesTitulos {
     position: absolute;
     top: 90px;
@@ -21,7 +21,7 @@ html body {
     margin: auto;
     border-style: solid;
     border-radius: 10px;
-    color: rgba(255, 0, 0, 0.37);
+    color: #3a3ada;
     width: 10%; }
 
 .contenedorPadre {
@@ -29,7 +29,7 @@ html body {
   padding: 0;
   overflow-x: hidden; }
   .contenedorPadre .contenedorHeader {
-    background-color: black;
+    background-color: white;
     height: 120px;
     width: 100%;
     position: fixed;
@@ -77,13 +77,14 @@ html body {
             display: inline-block; }
             .contenedorPadre .contenedorHeader .headerSearch .navPadre .estilosNav .nav-item .nav-link {
               text-decoration: none;
-              color: #fff;
-              text-transform: uppercase; }
+              color: black;
+              text-transform: uppercase;
+              font-weight: bold; }
             .contenedorPadre .contenedorHeader .headerSearch .navPadre .estilosNav .nav-item::after {
               content: '';
               height: 3px;
               width: 0%;
-              background: rgba(255, 0, 0, 0.37);
+              background: #3a3ada;
               position: absolute;
               left: 0;
               bottom: -10px;
@@ -160,7 +161,7 @@ html body {
 .contenidoHome {
   padding: 10px 100px 0px 100px; }
   .contenidoHome p {
-    color: rgba(245, 245, 245, 0.541); }
+    color: rgba(0, 0, 0, 0.89); }
   .contenidoHome .contenedorContenido {
     padding: 0;
     text-align: center;

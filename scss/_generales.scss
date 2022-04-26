@@ -9,12 +9,12 @@ html{
         font-family: 'Prompt', sans-serif;
         font-family: 'Inconsolata', monospace;
         font-family: 'Encode Sans SC', sans-serif;
-        background-color: black;
+        background-color: white;
         margin:0;
         padding: 0;
 
         h2{
-            color:whitesmoke;
+            color:black;
         }
         h4{
             @extend h2
@@ -30,7 +30,7 @@ html{
             margin: auto;
             border-style: solid;
             border-radius: 10px;
-            color:rgba(255, 0, 0, 0.37);
+            color:rgb(58, 58, 218);
             width: 10%;
         }
 
