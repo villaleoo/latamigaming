@@ -1,0 +1,36 @@
+.contenedorServicios{
+    width: 100%;
+    margin:120px 0 50px 0;
+    padding: 0 120px 0 120px;
+    .padreServicios{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin:100px 0 0 0;
+        background-color: rgba(58, 58, 218, 0.205);
+        border-radius: 30px;
+        .contenidoServicios{
+            display: flex;
+            align-items: center;
+            height: 300px;
+            width: 450px;
+            padding: 20px;
+            margin:10px 30px;
+            .imgServicios{
+                width: min-content;
+                height: min-content;
+                img{
+                    width: 180px;
+                    height: 180px;
+                    border-radius: 100px;
+                }
+            }
+            .textoServicios{
+                .listaServicios{
+                    margin: 0 0 0 40px;
+                    color: rgba(0, 0, 0, 0.87);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.contenedorNosotros{
+    margin-top: 120px;
+    .padreNosotros{
+        margin:100px 0 0 0;
+        padding:0 120px 0 120px;
+        .nuestraHistoria{
+            display: flex;
+            background-color: rgba(58, 58, 218, 0.205);
+            height: min-content;
+            .textoHistoria{
+                text-align: justify;
+                padding:0 80px 0 0;
+                width:50%;
+                height: 500px;
+            }
+            .imgHistoria{
+                width:50%;
+                img{
+                    border:solid red;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .padreExperiencia{
+        height: 500px;
+    }
+}

@@ -16,15 +16,26 @@ html{
         h2{
             color:black;
         }
+        h3{
+            @extend h2;
+        }
         h4{
-            @extend h2
+            @extend h2;
         }
         h5{
-            @extend h2
+            @extend h2;
+        }
+        h6{
+            @extend h2;
+        }
+        .titulosSecciones{
+            text-align: center;
+            margin: 20px 0 0 0;
+            height: min-content;
         }
         .detallesTitulos{
             position: absolute;
-            top: 90px;
+            top: 65px;
             left: 0;
             right: 0;
             margin: auto;

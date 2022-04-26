@@ -11,11 +11,15 @@ html body {
   background-color: white;
   margin: 0;
   padding: 0; }
-  html body h2, html body h4, html body h5, html body .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo p, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo html body p {
+  html body h2, html body h3, html body h4, html body h5, html body h6, html body .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo p, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo html body p {
     color: black; }
+  html body .titulosSecciones {
+    text-align: center;
+    margin: 20px 0 0 0;
+    height: min-content; }
   html body .detallesTitulos {
     position: absolute;
-    top: 90px;
+    top: 65px;
     left: 0;
     right: 0;
     margin: auto;
@@ -27,7 +31,7 @@ html body {
 .contenedorPadre {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; }
+  overflow: hidden; }
   .contenedorPadre .contenedorHeader {
     background-color: white;
     height: 120px;
@@ -47,7 +51,7 @@ html body {
         padding: 0;
         margin: 0;
         position: absolute; }
-        .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo h2, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo html body h4, html body .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo h4, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo html body h5, html body .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo h5, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo p {
+        .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo h2, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo html body h3, html body .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo h3, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo html body h4, html body .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo h4, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo html body h5, html body .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo h5, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo html body h6, html body .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo h6, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo p {
           position: absolute;
           width: 250px;
           top: 8px;
@@ -94,7 +98,7 @@ html body {
 
 .padreHome {
   margin-top: 120px;
-  height: calc(94vh - 120px); }
+  height: 75vh; }
   .padreHome .contenedorHome {
     width: 100%;
     height: 100%;
@@ -159,17 +163,20 @@ html body {
           margin-top: 8%; }
 
 .contenidoHome {
-  padding: 10px 100px 0px 100px; }
+  padding: 10px 100px 0px 100px;
+  overflow: hidden; }
   .contenidoHome p {
     color: rgba(0, 0, 0, 0.89); }
   .contenidoHome .contenedorContenido {
     padding: 0;
     text-align: center;
     margin: 0; }
-    .contenidoHome .contenedorContenido h2, .contenidoHome .contenedorContenido html body h4, html body .contenidoHome .contenedorContenido h4, .contenidoHome .contenedorContenido html body h5, html body .contenidoHome .contenedorContenido h5, .contenidoHome .contenedorContenido .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo p, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo .contenidoHome .contenedorContenido p {
+    .contenidoHome .contenedorContenido h2, .contenidoHome .contenedorContenido html body h3, html body .contenidoHome .contenedorContenido h3, .contenidoHome .contenedorContenido html body h4, html body .contenidoHome .contenedorContenido h4, .contenidoHome .contenedorContenido html body h5, html body .contenidoHome .contenedorContenido h5, .contenidoHome .contenedorContenido html body h6, html body .contenidoHome .contenedorContenido h6, .contenidoHome .contenedorContenido .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo p, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo .contenidoHome .contenedorContenido p {
       margin-bottom: 100px;
       margin-top: 20px;
       font-weight: bolder; }
+    .contenidoHome .contenedorContenido .detallesTitulos {
+      top: 90px; }
     .contenidoHome .contenedorContenido .servicioPrincipal {
       display: flex;
       flex-direction: column;
@@ -192,6 +199,60 @@ html body {
         margin: 0 15px 0 0; }
       .contenidoHome .contenedorContenido .serviciosSecundarios .servicioSecundario2 {
         margin: 0 0 0 15px; }
+
+.contenedorServicios {
+  width: 100%;
+  margin: 120px 0 50px 0;
+  padding: 0 120px 0 120px; }
+  .contenedorServicios .padreServicios {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 100px 0 0 0;
+    background-color: rgba(58, 58, 218, 0.205);
+    border-radius: 30px; }
+    .contenedorServicios .padreServicios .contenidoServicios {
+      display: flex;
+      align-items: center;
+      height: 300px;
+      width: 450px;
+      padding: 20px;
+      margin: 10px 30px; }
+      .contenedorServicios .padreServicios .contenidoServicios .imgServicios {
+        width: min-content;
+        height: min-content; }
+        .contenedorServicios .padreServicios .contenidoServicios .imgServicios img {
+          width: 180px;
+          height: 180px;
+          border-radius: 100px; }
+      .contenedorServicios .padreServicios .contenidoServicios .textoServicios .listaServicios {
+        margin: 0 0 0 40px;
+        color: rgba(0, 0, 0, 0.87); }
+
+.contenedorNosotros {
+  margin-top: 120px; }
+  .contenedorNosotros .padreNosotros {
+    margin: 100px 0 0 0;
+    padding: 0 120px 0 120px; }
+    .contenedorNosotros .padreNosotros .nuestraHistoria {
+      display: flex;
+      background-color: rgba(58, 58, 218, 0.205);
+      height: min-content; }
+      .contenedorNosotros .padreNosotros .nuestraHistoria .textoHistoria {
+        text-align: justify;
+        padding: 0 80px 0 0;
+        width: 50%;
+        height: 500px; }
+      .contenedorNosotros .padreNosotros .nuestraHistoria .imgHistoria {
+        width: 50%; }
+        .contenedorNosotros .padreNosotros .nuestraHistoria .imgHistoria img {
+          border: solid red;
+          width: 100%; }
+  .contenedorNosotros .padreExperiencia {
+    height: 500px; }
+
+.contenedorContacto {
+  margin-top: 120px; }
 
 .footer {
   height: 70vh;
@@ -249,8 +310,9 @@ html body {
       flex-direction: column;
       align-items: center; }
       .footer .contactoFooter .dataFooter .textoFooter {
-        color: rgba(255, 255, 255, 0.63); }
+        color: rgba(245, 245, 245, 0.616); }
       .footer .contactoFooter .dataFooter h6 {
+        font-weight: bold;
         color: white; }
       .footer .contactoFooter .dataFooter ul {
         list-style: none; }
@@ -263,4 +325,4 @@ html body {
         width: 50px; }
   .footer .copyright {
     text-align: center;
-    color: rgba(255, 255, 255, 0.199); }
+    color: rgba(245, 245, 245, 0.185); }
