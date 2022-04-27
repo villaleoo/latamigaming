@@ -231,49 +231,58 @@ html body {
         color: rgba(0, 0, 0, 0.87); }
 
 .contenedorNosotros {
-  margin-top: 120px; }
-  .contenedorNosotros .padreNosotros {
-    margin: 100px 0 0 0;
-    padding: 0 120px 0 120px; }
-    .contenedorNosotros .padreNosotros .nuestraHistoria {
-      display: flex;
-      background-color: rgba(58, 58, 218, 0.205);
-      height: min-content; }
-      .contenedorNosotros .padreNosotros .nuestraHistoria .textoHistoria {
-        text-align: justify;
-        padding: 0 80px 0 0;
-        width: 50%;
-        height: 500px; }
-      .contenedorNosotros .padreNosotros .nuestraHistoria .imgHistoria {
-        width: 50%; }
-        .contenedorNosotros .padreNosotros .nuestraHistoria .imgHistoria img {
-          border: solid red;
-          width: 100%; }
+  margin-top: 120px;
+  margin: 120px 120px 200px 120px; }
+  .contenedorNosotros p {
+    font-size: large; }
   .contenedorNosotros .padreExperiencia {
     margin: 100px 0 0 0;
-    padding: 0 120px 0 120px;
-    height: 500px; }
+    height: min-content; }
     .contenedorNosotros .padreExperiencia .nuestraExperiencia {
       display: flex;
       flex-direction: column;
       width: 100%;
-      height: 300px; }
+      height: 100%; }
       .contenedorNosotros .padreExperiencia .nuestraExperiencia .imgExperiencia {
         display: flex;
         justify-content: space-between;
         width: 100%; }
+        .contenedorNosotros .padreExperiencia .nuestraExperiencia .imgExperiencia .imgPrimera {
+          width: 60%; }
+        .contenedorNosotros .padreExperiencia .nuestraExperiencia .imgExperiencia .imgSegunda {
+          width: 40%; }
         .contenedorNosotros .padreExperiencia .nuestraExperiencia .imgExperiencia img {
+          padding: 0 10px;
           border-radius: 30px; }
       .contenedorNosotros .padreExperiencia .nuestraExperiencia .textoExperiencia {
         text-align: center;
         width: 100%;
         padding: 20px 30px; }
   .contenedorNosotros .proyectos {
-    margin-bottom: 200px;
-    padding: 0 120px 0 120px; }
-    .contenedorNosotros .proyectos img {
-      height: 378px;
-      border-radius: 30px; }
+    width: 100%;
+    margin-top: 20px; }
+    .contenedorNosotros .proyectos .enfoque, .contenedorNosotros .proyectos .idoneidad {
+      display: flex;
+      width: 100%;
+      height: 600px; }
+      .contenedorNosotros .proyectos .enfoque .imgEnfoque, .contenedorNosotros .proyectos .idoneidad .imgEnfoque, .contenedorNosotros .proyectos .idoneidad .imgIdoneidad {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        height: 100%; }
+        .contenedorNosotros .proyectos .enfoque .imgEnfoque img, .contenedorNosotros .proyectos .idoneidad .imgEnfoque img, .contenedorNosotros .proyectos .idoneidad .imgIdoneidad img {
+          border-radius: 20px;
+          width: 500px;
+          height: 250px; }
+      .contenedorNosotros .proyectos .enfoque .textoEnfoque, .contenedorNosotros .proyectos .idoneidad .textoEnfoque, .contenedorNosotros .proyectos .idoneidad .textoIdoneidad {
+        width: 50%;
+        padding: 130px 20px 0 50px; }
+        .contenedorNosotros .proyectos .enfoque .textoEnfoque p, .contenedorNosotros .proyectos .idoneidad .textoEnfoque p, .contenedorNosotros .proyectos .idoneidad .textoIdoneidad p {
+          text-align: justify; }
+    .contenedorNosotros .proyectos .idoneidad .textoIdoneidad {
+      padding: 170px 50px 0 20px; }
 
 .contenedorContacto {
   margin-top: 120px; }
