@@ -253,6 +253,39 @@ html body {
 
 .contenedorContacto {
   margin-top: 120px; }
+  .contenedorContacto .padreContacto .contenedorForm {
+    display: flex;
+    justify-content: space-between;
+    border: double 10px rgba(58, 58, 218, 0.575);
+    border-radius: 10px;
+    margin: 8% 15%;
+    height: 50vh; }
+    .contenedorContacto .padreContacto .contenedorForm .consultasForm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      margin: 3%; }
+      .contenedorContacto .padreContacto .contenedorForm .consultasForm .dataContactanos, .contenedorContacto .padreContacto .contenedorForm .consultasForm .textoContactanos {
+        margin: 0 0 3% 0;
+        width: 90%;
+        height: 40px;
+        border-radius: 5px; }
+      .contenedorContacto .padreContacto .contenedorForm .consultasForm .textoContactanos {
+        height: 50%;
+        background-color: white; }
+      .contenedorContacto .padreContacto .contenedorForm .consultasForm .inputEnviar {
+        width: 30%;
+        border-radius: 5px; }
+    .contenedorContacto .padreContacto .contenedorForm .textoContacto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 4%;
+      font-style: italic;
+      font-weight: bolder;
+      font-size: x-large; }
 
 .footer {
   height: 70vh;
