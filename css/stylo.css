@@ -104,7 +104,7 @@ html body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../assets/portada.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../assets/igaming-latam-consulting.png);
     background-size: cover;
     background-position: center; }
     .padreHome .contenedorHome .homeBanner {
@@ -164,7 +164,8 @@ html body {
 
 .contenidoHome {
   padding: 10px 100px 0px 100px;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 70px; }
   .contenidoHome p {
     color: rgba(0, 0, 0, 0.89); }
   .contenidoHome .contenedorContenido {
@@ -249,7 +250,30 @@ html body {
           border: solid red;
           width: 100%; }
   .contenedorNosotros .padreExperiencia {
+    margin: 100px 0 0 0;
+    padding: 0 120px 0 120px;
     height: 500px; }
+    .contenedorNosotros .padreExperiencia .nuestraExperiencia {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 300px; }
+      .contenedorNosotros .padreExperiencia .nuestraExperiencia .imgExperiencia {
+        display: flex;
+        justify-content: space-between;
+        width: 100%; }
+        .contenedorNosotros .padreExperiencia .nuestraExperiencia .imgExperiencia img {
+          border-radius: 30px; }
+      .contenedorNosotros .padreExperiencia .nuestraExperiencia .textoExperiencia {
+        text-align: center;
+        width: 100%;
+        padding: 20px 30px; }
+  .contenedorNosotros .proyectos {
+    margin-bottom: 200px;
+    padding: 0 120px 0 120px; }
+    .contenedorNosotros .proyectos img {
+      height: 378px;
+      border-radius: 30px; }
 
 .contenedorContacto {
   margin-top: 120px; }

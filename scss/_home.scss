@@ -7,8 +7,8 @@
         height: 100%;
         margin: 0;
         padding: 0;
-        background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../assets/portada.jpg);
-        background-size: cover;
+        background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../assets/igaming-latam-consulting.png);
+        background-size:cover;
         background-position: center;
         .homeBanner{
             display: flex;
@@ -88,6 +88,7 @@
 .contenidoHome{
     padding:10px 100px 0px 100px;
     overflow: hidden;
+    margin-bottom: 70px;
     p{
         color:rgba(0, 0, 0, 0.89);
     }
