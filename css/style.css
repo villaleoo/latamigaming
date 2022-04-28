@@ -11,6 +11,8 @@ html body {
   background-color: white;
   margin: 0;
   padding: 0; }
+  html body .container-fluid {
+    padding: 0; }
   html body h2, html body h3, html body h4, html body h5, html body h6 {
     color: black; }
   html body .titulosSecciones {
@@ -366,74 +368,30 @@ html body {
       font-size: x-large; }
 
 .footer {
-  height: 70vh;
-  background-color: black; }
-  .footer .suscripcion {
-    margin-bottom: 0;
-    width: 100%;
-    height: 45%;
-    background-image: url(../assets/suscribirImg.jpg);
-    background-position: center;
-    background-size: cover;
+  background-color: black;
+  height: 45vh;
+  width: 100%;
+  text-align: center;
+  position: relative; }
+  .footer .padreFooter {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-top: 3%; }
-    .footer .suscripcion .tituloSuscribir {
-      font-size: 50px;
-      font-weight: bold;
-      text-shadow: 0px 5px 5px black;
-      color: white;
-      margin: 0 0 50px 0; }
-    .footer .suscripcion .textoSuscribirse {
-      color: white;
-      text-shadow: 0px 5px 5px black;
-      font-size: large; }
-    .footer .suscripcion .contenedorSuscribirse {
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-      width: 50%;
-      height: 20%; }
-      .footer .suscripcion .contenedorSuscribirse ::placeholder {
-        color: white;
-        text-shadow: 0px 5px 5px black; }
-      .footer .suscripcion .contenedorSuscribirse .dataSuscribirse {
-        width: 70%;
-        height: 60px;
-        background-color: rgba(0, 0, 0, 0.637); }
-      .footer .suscripcion .contenedorSuscribirse .botonSuscribir {
-        height: 50px;
-        width: 120px; }
-  .footer .contactoFooter {
-    height: 40%;
-    padding-top: 2%;
-    display: flex;
     flex-direction: column;
-    align-items: center; }
-    .footer .contactoFooter img {
-      width: 30px;
-      height: 30px; }
-    .footer .contactoFooter .dataFooter {
-      margin-top: 3%;
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .footer .contactoFooter .dataFooter .textoFooter {
-        color: rgba(245, 245, 245, 0.616); }
-      .footer .contactoFooter .dataFooter h6 {
-        font-weight: bold;
-        color: white; }
-      .footer .contactoFooter .dataFooter ul {
-        list-style: none; }
-    .footer .contactoFooter .inicio {
-      position: fixed;
-      bottom: 20px;
-      right: 10px; }
-      .footer .contactoFooter .inicio img {
-        height: 50px;
-        width: 50px; }
+    justify-content: space-evenly;
+    background-image: url(../assets/suscribirImg.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 60%;
+    margin: 50px 0 0 0; }
+    .footer .padreFooter h2, .footer .padreFooter html body h3, html body .footer .padreFooter h3, .footer .padreFooter html body h4, html body .footer .padreFooter h4, .footer .padreFooter html body h5, html body .footer .padreFooter h5, .footer .padreFooter html body h6, html body .footer .padreFooter h6 {
+      color: white;
+      text-shadow: 0px 5px 5px black; }
   .footer .copyright {
-    text-align: center;
-    color: rgba(245, 245, 245, 0.185); }
+    height: min-content;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: auto; }
+    .footer .copyright p {
+      color: rgba(255, 255, 255, 0.103); }

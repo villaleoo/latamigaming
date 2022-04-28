@@ -12,7 +12,9 @@ html{
         background-color: white;
         margin:0;
         padding: 0;
-
+        .container-fluid{
+            padding: 0;
+        }
         h2{
             color:black;
         }
