@@ -109,6 +109,8 @@ html body {
       font-size: 120px;
       line-height: 140px;
       font-weight: 600; }
+      #header .content h1 span {
+        text-transform: lowercase; }
     #header .content p {
       max-width: 500px;
       line-height: 28px;

@@ -112,11 +112,15 @@
                 font-size: 120px;
                 line-height: 140px;
                 font-weight: 600;
+                span{
+                    text-transform: lowercase;
+                }
             }
             p{
                 max-width: 500px;
                 line-height: 28px;
                 opacity: 0;
+                
             }
             .links{
                 margin-top: 30px;
