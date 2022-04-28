@@ -21,6 +21,9 @@
                 background: #fff;
                 .logo{
                     color: #141414;
+                    .linkLogo{
+                        text-decoration: none;
+                    }
                     h2{
                         color: #141414 !important;
                     }
@@ -73,6 +76,9 @@
                         }
                         &:hover::after{
                             width: 100%;
+                        }
+                        &:active{
+                            color: rgb(58, 58, 218);
                         }
                     }
                 }

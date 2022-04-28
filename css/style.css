@@ -50,6 +50,8 @@ html body {
       background: #fff; }
       #header .navbar-header:hover .logo {
         color: #141414; }
+        #header .navbar-header:hover .logo .linkLogo {
+          text-decoration: none; }
         #header .navbar-header:hover .logo h2, #header .navbar-header:hover .logo html body h3, html body #header .navbar-header:hover .logo h3, #header .navbar-header:hover .logo html body h4, html body #header .navbar-header:hover .logo h4, #header .navbar-header:hover .logo html body h5, html body #header .navbar-header:hover .logo h5, #header .navbar-header:hover .logo html body h6, html body #header .navbar-header:hover .logo h6 {
           color: #141414 !important; }
       #header .navbar-header:hover .navbar-ul .navbar-li .navbar-a {
@@ -86,6 +88,8 @@ html body {
           transition: 0.5s; }
         #header .navbar-header .navbar-ul .navbar-li .navbar-a:hover::after {
           width: 100%; }
+        #header .navbar-header .navbar-ul .navbar-li .navbar-a:active {
+          color: #3a3ada; }
   #header .navbar-header.bottom {
     background: #fff;
     z-index: 10; }
