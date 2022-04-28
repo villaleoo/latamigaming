@@ -11,7 +11,7 @@ html body {
   background-color: white;
   margin: 0;
   padding: 0; }
-  html body h2, html body h3, html body h4, html body h5, html body h6, html body .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo p, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo html body p {
+  html body h2, html body h3, html body h4, html body h5, html body h6 {
     color: black; }
   html body .titulosSecciones {
     text-align: center;
@@ -28,73 +28,112 @@ html body {
     color: #3a3ada;
     width: 10%; }
 
-.contenedorPadre {
-  margin: 0;
-  padding: 0;
-  overflow: hidden; }
-  .contenedorPadre .contenedorHeader {
-    background-color: white;
-    height: 100px;
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../assets/igaming-latam-consulting.png) !important;
+  background-position: center;
+  background-size: cover;
+  overflow-x: hidden; }
+  #header .navbar-header {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    transition: background 1s;
     position: fixed;
-    z-index: 9999;
-    margin: 0; }
-    .contenedorPadre .contenedorHeader .headerLogo {
+    top: 0;
+    left: 0;
+    transition: 0.7s; }
+    #header .navbar-header:hover {
+      background: #fff; }
+      #header .navbar-header:hover .logo {
+        color: #141414; }
+        #header .navbar-header:hover .logo h2, #header .navbar-header:hover .logo html body h3, html body #header .navbar-header:hover .logo h3, #header .navbar-header:hover .logo html body h4, html body #header .navbar-header:hover .logo h4, #header .navbar-header:hover .logo html body h5, html body #header .navbar-header:hover .logo h5, #header .navbar-header:hover .logo html body h6, html body #header .navbar-header:hover .logo h6 {
+          color: #141414 !important; }
+      #header .navbar-header:hover .navbar-ul .navbar-li .navbar-a {
+        color: #141414; }
+    #header .navbar-header .logo {
       display: flex;
-      justify-content: center;
-      align-items: center; }
-      .contenedorPadre .contenedorHeader .headerLogo img {
-        width: 80px;
-        height: 80px; }
-      .contenedorPadre .contenedorHeader .headerLogo .logoLatam {
-        display: flex;
-        padding: 0;
-        margin: 0;
-        position: absolute; }
-        .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo h2, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo html body h3, html body .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo h3, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo html body h4, html body .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo h4, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo html body h5, html body .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo h5, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo html body h6, html body .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo h6, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo p {
-          position: absolute;
-          width: 250px;
-          top: 8px;
-          left: 85px;
-          right: 0;
-          margin: auto; }
-        .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo p {
-          top: 40px;
-          left: 100px; }
-        .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo span {
+      align-items: center;
+      font-size: 26px;
+      color: #fff; }
+      #header .navbar-header .logo .logoImg {
+        width: calc(min(50vw, 60px));
+        margin-right: 10px; }
+      #header .navbar-header .logo h2, #header .navbar-header .logo html body h3, html body #header .navbar-header .logo h3, #header .navbar-header .logo html body h4, html body #header .navbar-header .logo h4, #header .navbar-header .logo html body h5, html body #header .navbar-header .logo h5, #header .navbar-header .logo html body h6, html body #header .navbar-header .logo h6 {
+        color: #fff !important; }
+        #header .navbar-header .logo h2 span, #header .navbar-header .logo html body h3 span, html body #header .navbar-header .logo h3 span, #header .navbar-header .logo html body h4 span, html body #header .navbar-header .logo h4 span, #header .navbar-header .logo html body h5 span, html body #header .navbar-header .logo h5 span, #header .navbar-header .logo html body h6 span, html body #header .navbar-header .logo h6 span {
           color: #6262bd; }
-    .contenedorPadre .contenedorHeader .headerSearch {
-      display: flex;
-      padding: 0;
-      width: 100%; }
-      .contenedorPadre .contenedorHeader .headerSearch .navPadre {
-        width: 80%;
-        margin: auto; }
-        .contenedorPadre .contenedorHeader .headerSearch .navPadre .estilosNav {
-          display: flex;
-          justify-content: space-evenly;
-          width: 100%;
-          align-items: center; }
-          .contenedorPadre .contenedorHeader .headerSearch .navPadre .estilosNav .nav-item {
-            position: relative;
-            list-style: none;
-            display: inline-block; }
-            .contenedorPadre .contenedorHeader .headerSearch .navPadre .estilosNav .nav-item .nav-link {
-              text-decoration: none;
-              color: black;
-              text-transform: uppercase;
-              font-weight: bold; }
-            .contenedorPadre .contenedorHeader .headerSearch .navPadre .estilosNav .nav-item::after {
-              content: '';
-              height: 3px;
-              width: 0%;
-              background: #3a3ada;
-              position: absolute;
-              left: 0;
-              bottom: -10px;
-              transition: 0.5s; }
-            .contenedorPadre .contenedorHeader .headerSearch .navPadre .estilosNav .nav-item:hover::after {
-              width: 100%; }
+    #header .navbar-header .navbar-ul .navbar-li {
+      position: relative;
+      display: inline-block;
+      list-style: none;
+      margin: 10px 20px; }
+      #header .navbar-header .navbar-ul .navbar-li .navbar-a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold; }
+        #header .navbar-header .navbar-ul .navbar-li .navbar-a::after {
+          content: '';
+          height: 3px;
+          width: 0%;
+          background: #3a3ada;
+          position: absolute;
+          left: 0;
+          bottom: -10px;
+          transition: 0.5s; }
+        #header .navbar-header .navbar-ul .navbar-li .navbar-a:hover::after {
+          width: 100%; }
+  #header .navbar-header.bottom {
+    background: #fff;
+    z-index: 10; }
+    #header .navbar-header.bottom .logo {
+      color: #141414; }
+      #header .navbar-header.bottom .logo h2, #header .navbar-header.bottom .logo html body h3, html body #header .navbar-header.bottom .logo h3, #header .navbar-header.bottom .logo html body h4, html body #header .navbar-header.bottom .logo h4, #header .navbar-header.bottom .logo html body h5, html body #header .navbar-header.bottom .logo h5, #header .navbar-header.bottom .logo html body h6, html body #header .navbar-header.bottom .logo h6 {
+        color: #141414 !important; }
+    #header .navbar-header.bottom .navbar-ul .navbar-li .navbar-a {
+      color: #141414; }
+  #header #navbarNav {
+    justify-content: flex-end; }
+  #header .content {
+    margin-top: 9%;
+    margin-left: 9%;
+    color: #fff; }
+    #header .content h1 {
+      font-size: 120px;
+      line-height: 140px;
+      font-weight: 600; }
+    #header .content p {
+      max-width: 500px;
+      line-height: 28px;
+      opacity: 0; }
+    #header .content .links {
+      margin-top: 30px;
+      opacity: 0; }
+      #header .content .links .btnLink {
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        border: 2px solid #fff;
+        padding: 10px 35px;
+        border-radius: 30px;
+        margin-right: 15px; }
+    #header .content .slide-left {
+      animation: slideleft 1s linear forwards; }
+    #header .content p.slide-left {
+      animation-delay: 1s; }
+    #header .content .links.slide-left {
+      animation-delay: 2s; }
+
+@keyframes slideleft {
+  0% {
+    transform: translate(100px);
+    opacity: 0; }
+  100% {
+    transform: translate(0px);
+    opacity: 1; } }
 
 .padreHome {
   margin-top: 120px;
@@ -172,7 +211,7 @@ html body {
     padding: 0;
     text-align: center;
     margin: 0; }
-    .contenidoHome .contenedorContenido h2, .contenidoHome .contenedorContenido html body h3, html body .contenidoHome .contenedorContenido h3, .contenidoHome .contenedorContenido html body h4, html body .contenidoHome .contenedorContenido h4, .contenidoHome .contenedorContenido html body h5, html body .contenidoHome .contenedorContenido h5, .contenidoHome .contenedorContenido html body h6, html body .contenidoHome .contenedorContenido h6, .contenidoHome .contenedorContenido .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo p, .contenedorPadre .contenedorHeader .headerLogo .logoLatam .textoLogo .contenidoHome .contenedorContenido p {
+    .contenidoHome .contenedorContenido h2, .contenidoHome .contenedorContenido html body h3, html body .contenidoHome .contenedorContenido h3, .contenidoHome .contenedorContenido html body h4, html body .contenidoHome .contenedorContenido h4, .contenidoHome .contenedorContenido html body h5, html body .contenidoHome .contenedorContenido h5, .contenidoHome .contenedorContenido html body h6, html body .contenidoHome .contenedorContenido h6 {
       margin-bottom: 100px;
       margin-top: 20px;
       font-weight: bolder; }
