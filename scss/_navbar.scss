@@ -1,0 +1,71 @@
+#header-global{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.7s;
+    overflow-x: hidden;
+    z-index: 10;
+    .navbar-header-global{
+        flex: 1 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 18px 8%;
+        top: 0;
+        left: 0;
+        .logo-global{
+            flex: 1;
+            .logo-img-global{
+                width: calc(min(50vw, 200px));
+                
+            }
+        }
+        .navbar-ul-global{
+            .navbar-li-global{
+                    position: relative;
+                    display: inline-block;
+                    list-style: none;
+                    margin: 10px 20px;
+                        .navbar-a-global{
+                            text-decoration: none;
+                            color: #141414;
+                            font-weight: bold;
+                            &::after{
+                                content: '';
+                                height: 3px;
+                                width: 0%;
+                                background: rgb(58, 58, 218);
+                                position: absolute;
+                                left: 0;
+                                bottom: -10px;
+                                transition: 0.5s;
+                            }
+                            &:hover::after{
+                                width: 100%;
+                            }
+                            &:active{
+                                color: rgb(58, 58, 218);
+                            }
+                            
+                    }
+            }
+        }
+        #navbarNav{
+            justify-content: flex-end;
+        }
+    }
+    .navbar-header-global.bottom-global{
+        background: #fff;
+        z-index: 10;
+        .navbar-ul-global {
+            .navbar-li-global {
+                .navbar-a-global{
+                    color: #141414;
+                }
+            }
+        }
+    }
+}

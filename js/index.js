@@ -1,5 +1,7 @@
+window.addEventListener("scroll", function(){
+    let headerGlobal = document.querySelector(".navbar-header-global");
+    headerGlobal.classList.toggle("bottom-global", window.scrollY>0);
+})
 
-    window.addEventListener("scroll", function(){
-        let header = document.querySelector(".navbar-header");
-        header.classList.toggle("bottom", window.scrollY>0);
-    })
+
+    

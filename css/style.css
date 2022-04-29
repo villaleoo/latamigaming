@@ -1,16 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
 html body {
-  font-family: 'PT Mono', monospace;
-  font-family: 'Prompt', sans-serif;
-  font-family: 'Inconsolata', monospace;
-  font-family: 'Encode Sans SC', sans-serif;
-  background-color: white;
-  margin: 0;
-  padding: 0; }
+  font-family: 'Open Sans', sans-serif;
+  background-color: white; }
   html body h2, html body h3, html body h4, html body h5, html body h6 {
     color: black; }
   html body .titulosSecciones {
@@ -28,14 +24,14 @@ html body {
     color: #3a3ada;
     width: 10%; }
 
-#header {
+#header-home {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../assets/igaming-latam-consulting.png) !important;
   background-position: center;
   background-size: cover;
   overflow-x: hidden; }
-  #header .navbar-header {
+  #header-home .navbar-header-home {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -46,38 +42,28 @@ html body {
     top: 0;
     left: 0;
     transition: 0.7s; }
-    #header .navbar-header:hover {
+    #header-home .navbar-header-home:hover {
       background: #fff; }
-      #header .navbar-header:hover .logo {
+      #header-home .navbar-header-home:hover .logo-img-home {
         color: #141414; }
-        #header .navbar-header:hover .logo .linkLogo {
+        #header-home .navbar-header-home:hover .logo-img-home .link-logo-home {
           text-decoration: none; }
-        #header .navbar-header:hover .logo h2, #header .navbar-header:hover .logo html body h3, html body #header .navbar-header:hover .logo h3, #header .navbar-header:hover .logo html body h4, html body #header .navbar-header:hover .logo h4, #header .navbar-header:hover .logo html body h5, html body #header .navbar-header:hover .logo h5, #header .navbar-header:hover .logo html body h6, html body #header .navbar-header:hover .logo h6 {
+        #header-home .navbar-header-home:hover .logo-img-home h2, #header-home .navbar-header-home:hover .logo-img-home html body h3, html body #header-home .navbar-header-home:hover .logo-img-home h3, #header-home .navbar-header-home:hover .logo-img-home html body h4, html body #header-home .navbar-header-home:hover .logo-img-home h4, #header-home .navbar-header-home:hover .logo-img-home html body h5, html body #header-home .navbar-header-home:hover .logo-img-home h5, #header-home .navbar-header-home:hover .logo-img-home html body h6, html body #header-home .navbar-header-home:hover .logo-img-home h6 {
           color: #141414 !important; }
-      #header .navbar-header:hover .navbar-ul .navbar-li .navbar-a {
+      #header-home .navbar-header-home:hover .navbar-ul-home .navbar-li-home .navbar-a-home {
         color: #141414; }
-    #header .navbar-header .logo {
-      display: flex;
-      align-items: center;
-      font-size: 26px;
-      color: #fff; }
-      #header .navbar-header .logo .logoImg {
-        width: calc(min(50vw, 60px));
-        margin-right: 10px; }
-      #header .navbar-header .logo h2, #header .navbar-header .logo html body h3, html body #header .navbar-header .logo h3, #header .navbar-header .logo html body h4, html body #header .navbar-header .logo h4, #header .navbar-header .logo html body h5, html body #header .navbar-header .logo h5, #header .navbar-header .logo html body h6, html body #header .navbar-header .logo h6 {
-        color: #fff !important; }
-        #header .navbar-header .logo h2 span, #header .navbar-header .logo html body h3 span, html body #header .navbar-header .logo h3 span, #header .navbar-header .logo html body h4 span, html body #header .navbar-header .logo h4 span, #header .navbar-header .logo html body h5 span, html body #header .navbar-header .logo h5 span, #header .navbar-header .logo html body h6 span, html body #header .navbar-header .logo h6 span {
-          color: #6262bd; }
-    #header .navbar-header .navbar-ul .navbar-li {
+    #header-home .navbar-header-home .logo-home .logo-img-home {
+      width: calc(min(50vw, 200px)); }
+    #header-home .navbar-header-home .navbar-ul-home .navbar-li-home {
       position: relative;
       display: inline-block;
       list-style: none;
       margin: 10px 20px; }
-      #header .navbar-header .navbar-ul .navbar-li .navbar-a {
+      #header-home .navbar-header-home .navbar-ul-home .navbar-li-home .navbar-a-home {
         text-decoration: none;
         color: #fff;
         font-weight: bold; }
-        #header .navbar-header .navbar-ul .navbar-li .navbar-a::after {
+        #header-home .navbar-header-home .navbar-ul-home .navbar-li-home .navbar-a-home::after {
           content: '';
           height: 3px;
           width: 0%;
@@ -86,39 +72,43 @@ html body {
           left: 0;
           bottom: -10px;
           transition: 0.5s; }
-        #header .navbar-header .navbar-ul .navbar-li .navbar-a:hover::after {
+        #header-home .navbar-header-home .navbar-ul-home .navbar-li-home .navbar-a-home:hover::after {
           width: 100%; }
-        #header .navbar-header .navbar-ul .navbar-li .navbar-a:active {
+        #header-home .navbar-header-home .navbar-ul-home .navbar-li-home .navbar-a-home:active {
           color: #3a3ada; }
-  #header .navbar-header.bottom {
+  #header-home .navbar-header-home.bottom {
     background: #fff;
     z-index: 10; }
-    #header .navbar-header.bottom .logo {
+    #header-home .navbar-header-home.bottom .logo-home {
       color: #141414; }
-      #header .navbar-header.bottom .logo h2, #header .navbar-header.bottom .logo html body h3, html body #header .navbar-header.bottom .logo h3, #header .navbar-header.bottom .logo html body h4, html body #header .navbar-header.bottom .logo h4, #header .navbar-header.bottom .logo html body h5, html body #header .navbar-header.bottom .logo h5, #header .navbar-header.bottom .logo html body h6, html body #header .navbar-header.bottom .logo h6 {
+      #header-home .navbar-header-home.bottom .logo-home .logo-img-home {
+        filter: none; }
+      #header-home .navbar-header-home.bottom .logo-home h2, #header-home .navbar-header-home.bottom .logo-home html body h3, html body #header-home .navbar-header-home.bottom .logo-home h3, #header-home .navbar-header-home.bottom .logo-home html body h4, html body #header-home .navbar-header-home.bottom .logo-home h4, #header-home .navbar-header-home.bottom .logo-home html body h5, html body #header-home .navbar-header-home.bottom .logo-home h5, #header-home .navbar-header-home.bottom .logo-home html body h6, html body #header-home .navbar-header-home.bottom .logo-home h6 {
         color: #141414 !important; }
-    #header .navbar-header.bottom .navbar-ul .navbar-li .navbar-a {
+    #header-home .navbar-header-home.bottom .navbar-ul-home .navbar-li-home .navbar-a-home {
       color: #141414; }
-  #header #navbarNav {
+  #header-home #navbarNav {
     justify-content: flex-end; }
-  #header .content {
-    margin-top: 9%;
-    margin-left: 9%;
-    color: #fff; }
-    #header .content h1 {
-      font-size: 120px;
-      line-height: 140px;
-      font-weight: 600; }
-      #header .content h1 span {
-        text-transform: lowercase; }
-    #header .content p {
+  #header-home .content {
+    margin-top: 18%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    #header-home .content h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 45px;
+      font-weight: 600;
+      padding: 20px; }
+    #header-home .content p {
       max-width: 500px;
       line-height: 28px;
       opacity: 0; }
-    #header .content .links {
+    #header-home .content .links {
       margin-top: 30px;
       opacity: 0; }
-      #header .content .links .btnLink {
+      #header-home .content .links .btnLink {
         color: #fff;
         text-decoration: none;
         display: inline-block;
@@ -126,11 +116,11 @@ html body {
         padding: 10px 35px;
         border-radius: 30px;
         margin-right: 15px; }
-    #header .content .slide-left {
+    #header-home .content .slide-left {
       animation: slideleft 1s linear forwards; }
-    #header .content p.slide-left {
+    #header-home .content p.slide-left {
       animation-delay: 1s; }
-    #header .content .links.slide-left {
+    #header-home .content .links.slide-left {
       animation-delay: 2s; }
 
 @keyframes slideleft {
@@ -140,6 +130,58 @@ html body {
   100% {
     transform: translate(0px);
     opacity: 1; } }
+
+#header-global {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.7s;
+  overflow-x: hidden;
+  z-index: 10; }
+  #header-global .navbar-header-global {
+    flex: 1 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 8%;
+    top: 0;
+    left: 0; }
+    #header-global .navbar-header-global .logo-global {
+      flex: 1; }
+      #header-global .navbar-header-global .logo-global .logo-img-global {
+        width: calc(min(50vw, 200px)); }
+    #header-global .navbar-header-global .navbar-ul-global .navbar-li-global {
+      position: relative;
+      display: inline-block;
+      list-style: none;
+      margin: 10px 20px; }
+      #header-global .navbar-header-global .navbar-ul-global .navbar-li-global .navbar-a-global {
+        text-decoration: none;
+        color: #141414;
+        font-weight: bold; }
+        #header-global .navbar-header-global .navbar-ul-global .navbar-li-global .navbar-a-global::after {
+          content: '';
+          height: 3px;
+          width: 0%;
+          background: #3a3ada;
+          position: absolute;
+          left: 0;
+          bottom: -10px;
+          transition: 0.5s; }
+        #header-global .navbar-header-global .navbar-ul-global .navbar-li-global .navbar-a-global:hover::after {
+          width: 100%; }
+        #header-global .navbar-header-global .navbar-ul-global .navbar-li-global .navbar-a-global:active {
+          color: #3a3ada; }
+    #header-global .navbar-header-global #navbarNav {
+      justify-content: flex-end; }
+  #header-global .navbar-header-global.bottom-global {
+    background: #fff;
+    z-index: 10; }
+    #header-global .navbar-header-global.bottom-global .navbar-ul-global .navbar-li-global .navbar-a-global {
+      color: #141414; }
 
 .padreHome {
   margin-top: 120px;
@@ -228,23 +270,36 @@ html body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 20px 0; }
-      .contenidoHome .contenedorContenido .servicioPrincipal img {
-        width: 100%;
-        height: 500px; }
-      .contenidoHome .contenedorContenido .servicioPrincipal h4 {
-        margin: 20px 0;
-        font-weight: bolder; }
+      padding: 20px 0;
+      margin-bottom: 80px;
+      background: #f6f9fe; }
+      .contenidoHome .contenedorContenido .servicioPrincipal .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; }
+        .contenidoHome .contenedorContenido .servicioPrincipal .content p {
+          font-family: 'Open Sans', sans-serif;
+          font-size: 15px; }
+      .contenidoHome .contenedorContenido .servicioPrincipal .servicioImg {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
     .contenidoHome .contenedorContenido .serviciosSecundarios {
       display: flex;
-      padding: 0; }
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0;
+      background: #f6f9fe; }
+      .contenidoHome .contenedorContenido .serviciosSecundarios p {
+        font-family: "Open Sans", sans-serif;
+        line-height: 24px;
+        font-size: 14px; }
       .contenidoHome .contenedorContenido .serviciosSecundarios h5 {
         margin: 20px 0;
-        font-weight: bolder; }
-      .contenidoHome .contenedorContenido .serviciosSecundarios .servicioSecundario1 {
-        margin: 0 15px 0 0; }
-      .contenidoHome .contenedorContenido .serviciosSecundarios .servicioSecundario2 {
-        margin: 0 0 0 15px; }
+        font-size: 32px;
+        font-weight: 700; }
 
 .contenedorServicios {
   width: 100%;

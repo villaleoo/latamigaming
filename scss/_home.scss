@@ -110,28 +110,41 @@
             justify-content: center;
             align-items: center;
             padding: 20px 0;
-            img{
-                width: 100%;
-                height: 500px;
+            margin-bottom: 80px;
+            background: #f6f9fe;
+            .content{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                p{
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 15px;
+                }
             }
-            h4{
-                margin: 20px 0;
-                font-weight: bolder;
+            .servicioImg{
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
-            
         }
         .serviciosSecundarios{
             display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
             padding: 0;
+            background: #f6f9fe;
+            p{
+                font-family: "Open Sans", sans-serif;
+                line-height: 24px;
+                font-size: 14px;
+            }
             h5{
                 margin: 20px 0;
-                font-weight: bolder;
-            }
-            .servicioSecundario1{
-                margin:0 15px 0 0;
-            }
-            .servicioSecundario2{
-                margin:0 0 0 15px;
+                font-size: 32px;
+                font-weight: 700;
             }
         }
     }
