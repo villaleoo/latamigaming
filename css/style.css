@@ -279,27 +279,17 @@ html body {
         align-items: center;
         justify-content: center; }
         .contenidoHome .contenedorContenido .servicioPrincipal .content p {
-          font-family: 'Open Sans', sans-serif;
-          font-size: 15px; }
+          font-family: "Open Sans", sans-serif;
+          line-height: 24px;
+          font-size: 14px; }
+        .contenidoHome .contenedorContenido .servicioPrincipal .content h5 {
+          margin: 20px 0;
+          font-size: 32px;
+          font-weight: 700; }
       .contenidoHome .contenedorContenido .servicioPrincipal .servicioImg {
         display: flex;
         align-items: center;
         justify-content: center; }
-    .contenidoHome .contenedorContenido .serviciosSecundarios {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0;
-      background: #f6f9fe; }
-      .contenidoHome .contenedorContenido .serviciosSecundarios p {
-        font-family: "Open Sans", sans-serif;
-        line-height: 24px;
-        font-size: 14px; }
-      .contenidoHome .contenedorContenido .serviciosSecundarios h5 {
-        margin: 20px 0;
-        font-size: 32px;
-        font-weight: 700; }
 
 .contenedorServicios {
   width: 100%;
