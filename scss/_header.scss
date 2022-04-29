@@ -42,7 +42,7 @@
             .logo-home{
                 .logo-img-home{
                     width: calc(min(50vw, 200px));
-                   
+                    // filter: brightness(0) invert(1);
                 }
             }
            .navbar-ul-home {
@@ -82,7 +82,7 @@
             .logo-home{
                 color: #141414;
                 .logo-img-home{
-                    filter: none;
+                    filter: invert(0.8) grayscale(100%);
                 }
                 h2{
                     color: #141414 !important;

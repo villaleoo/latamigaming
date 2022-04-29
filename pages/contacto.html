@@ -75,46 +75,64 @@
       </nav>
     </div>
     <!-- SECTION HEADER -->
+    
+    <!-- ======= Contact Section ======= -->
     <div class="container-fluid contenedorPadre">
-      <div class="row contenedorContacto">
-        <div class="col-12 col-sm-12 col-lg-12 col-xl-12 titulosSecciones">
-          <h2>Contactanos</h2>
-          <span class="detallesTitulos"></span>
-        </div>
-        <div class="col-12 col-sm-12 col-lg-12 col-xl-12 padreContacto">
-          <div class="contenedorForm">
-            <p class="textoContacto">
-              📩¡Escribinos tu consulta y te contactaremos via e-mail para
-              responder todas tus dudas!👉
-            </p>
-            <form class="consultasForm">
-              <input
-                class="dataContactanos"
-                type="text"
-                name="Nombre"
-                placeholder="Nombre"
-              />
-              <input
-                class="dataContactanos"
-                type="email"
-                name="Email"
-                placeholder="E-mail"
-              />
-              <textarea
-                class="textoContactanos"
-                maxlength="400"
-                rows="4"
-                height="200px"
-                cols="15"
-                placeholder="¿En que podemos ayudarte?✍"
-              ></textarea>
-              <button type="submit" class="btn btn-outline-dark inputEnviar">
-                Enviar
-              </button>
-            </form>
+    <section id="contact" class="section-contact">
+        <div class="container">
+            <div class="col-12 col-sm-12 col-lg-12 col-xl-12 titulosSecciones">
+                <h2>Contacta con nosotros</h2>
+                <span class="detallesTitulos"></span>
+                <p>Puedes contactarnos por los siguientes medios.</p>
+              </div>
+          <div class="row" >
+            <div class="col-lg-6 col-md-6">
+              <div class="info-box  mb-4">
+                <img src="../assets/envelope.svg" class="contact-icon" alt="envelope icon">
+                <h3>Envíenos un correo electrónico</h3>
+                <p>latamigaming@hotmail.com</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+              <div class="info-box  mb-4">
+                <img src="../assets/telephone-inbound.svg" class="contact-icon" alt="telephone icon">
+                <h3>Llámanos</h3>
+                <p>+54 XXX XXXX XX</p>
+              </div>
+            </div>
           </div>
+          
+          <div class="row">
+            <div class="col-lg-12">
+              <form>
+                <div class="row">
+                  <div class="col form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" required>
+                  </div>
+                  <div class="col form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Tu Email" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
+                </div>
+                <!-- <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-mensaje"></div>
+                  <div class="enviar-mensaje">Tu mensaje ha sido enviado. ¡Gracias!</div>
+                </div> -->
+                <div class="text-center mb-4"><button type="submit">Enviar mensaje</button></div>
+              </form>
+            </div>
+  
+          </div>
+  
         </div>
-      </div>
+      </section>
+    </div><!-- Section Contacto -->
       <div class="row footer">
         <div class="col-12 col-sm-12 col-lg-12 col-xl-12 suscripcion">
           <h3 class="tituloSuscribir">Suscribir</h3>
