@@ -1,0 +1,27 @@
+//MOBILE
+@media only screen and (min-width:0px) and (max-width:768px){
+    .footer{
+        height: 50vh;
+        .padreFooter{
+            h2{
+                font-size: x-large;
+            }
+            img{
+                width: 42px;
+                height: 42px;
+            }
+        }
+        .copyright{
+            padding: 0;
+            p{
+                color: rgba(255, 255, 255, 0.281);
+                text-align: center;
+            }
+        }
+    }
+
+}
+//LAPTOP
+@media only screen and (min-width:1024px) and (max-width:1440px){
+    
+}

@@ -1,0 +1,25 @@
+//MOBILE
+@media only screen and (min-width:0px) and (max-width:768px){
+    #header-global{
+        .navbar-header-global{
+            flex:none;
+            width: 100%;
+        }
+    }
+}
+//LAPTOP
+@media only screen and (min-width:1024px) and (max-width:1440px){
+    #header-global{
+        .navbar-header-global{
+            padding: 18px 2% 18px 8%;
+            .navbar-ul-global{
+                width: min-content;
+                display: flex;
+                justify-content: space-around;
+                .navbar-li-global{
+                    width:min-content;
+                }
+            }
+        }
+    }
+}

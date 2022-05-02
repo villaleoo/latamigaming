@@ -25,7 +25,7 @@ html body {
     border-style: solid;
     border-radius: 10px;
     color: #3a3ada;
-    width: 10%; }
+    width: 120px; }
 
 #header-home {
   width: 100%;
@@ -323,9 +323,7 @@ html body {
         color: rgba(0, 0, 0, 0.87); }
 
 .contenedorNosotros {
-  margin: 120px 120px 70px 120px; }
-  .contenedorNosotros p {
-    font-size: large; }
+  margin: 120px 120px 0 120px; }
   .contenedorNosotros .padreExperiencia {
     margin: 100px 0 0 0;
     height: min-content; }
@@ -374,6 +372,47 @@ html body {
           text-align: justify; }
     .contenedorNosotros .proyectos .idoneidad .textoIdoneidad {
       padding: 170px 50px 0 20px; }
+
+.contenedorMarcas .titulosSecciones {
+  height: min-content; }
+
+.contenedorMarcas .padreMarcas {
+  margin: 50px 0 50px 0; }
+  .contenedorMarcas .padreMarcas .slider {
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+    border-radius: 50px; }
+    .contenedorMarcas .padreMarcas .slider::before, .contenedorMarcas .padreMarcas .slider::after {
+      background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+      content: "";
+      height: 100px;
+      position: absolute;
+      width: 200px;
+      z-index: 2; }
+    .contenedorMarcas .padreMarcas .slider::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg); }
+    .contenedorMarcas .padreMarcas .slider::before {
+      left: 0;
+      top: 0; }
+    .contenedorMarcas .padreMarcas .slider .slide-track {
+      animation: scroll 40s linear infinite;
+      display: flex;
+      width: calc(250px * 14); }
+    .contenedorMarcas .padreMarcas .slider .slide {
+      height: 100px;
+      width: 250px; }
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(calc(-250px * 17)); } }
 
 .contenedorPadre {
   margin-top: 120px; }
@@ -507,4 +546,122 @@ html body {
     bottom: 0;
     margin: auto; }
     .footer .copyright p {
-      color: rgba(255, 255, 255, 0.103); }
+      color: rgba(255, 255, 255, 0.349); }
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  body .contenedorPadre {
+    padding: 0;
+    margin: 0; }
+  body p {
+    font-size: medium; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  body p {
+    font-size: large; } }
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  #header-global .navbar-header-global {
+    flex: none;
+    width: 100%; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  #header-global .navbar-header-global {
+    padding: 18px 2% 18px 8%; }
+    #header-global .navbar-header-global .navbar-ul-global {
+      width: min-content;
+      display: flex;
+      justify-content: space-around; }
+      #header-global .navbar-header-global .navbar-ul-global .navbar-li-global {
+        width: min-content; } }
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .contenedorNosotros {
+    width: 100%;
+    margin: 0;
+    margin: 70px 0 30px 0; }
+    .contenedorNosotros p {
+      padding-top: 1%; }
+    .contenedorNosotros .padreExperiencia {
+      margin: 70px 0 0 0;
+      padding: 0; }
+      .contenedorNosotros .padreExperiencia .nuestraExperiencia {
+        display: flex;
+        flex-direction: column; }
+        .contenedorNosotros .padreExperiencia .nuestraExperiencia .imgExperiencia {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 0 3%; }
+          .contenedorNosotros .padreExperiencia .nuestraExperiencia .imgExperiencia .imgPrimera {
+            width: 100%;
+            order: 1;
+            margin: 5px 0; }
+          .contenedorNosotros .padreExperiencia .nuestraExperiencia .imgExperiencia .imgSegunda {
+            width: 100%;
+            order: 2; }
+        .contenedorNosotros .padreExperiencia .nuestraExperiencia .textoExperiencia {
+          text-align: justify;
+          padding: 20px 30px 0 30px; }
+          .contenedorNosotros .padreExperiencia .nuestraExperiencia .textoExperiencia h4 {
+            text-align: center; }
+    .contenedorNosotros .proyectos {
+      padding: 0 30px 0 30px; }
+      .contenedorNosotros .proyectos .enfoque, .contenedorNosotros .proyectos .idoneidad {
+        display: flex;
+        flex-direction: column; }
+        .contenedorNosotros .proyectos .enfoque .imgEnfoque, .contenedorNosotros .proyectos .idoneidad .imgEnfoque, .contenedorNosotros .proyectos .idoneidad .imgIdoneidad {
+          width: 100%;
+          order: 4;
+          justify-content: center; }
+          .contenedorNosotros .proyectos .enfoque .imgEnfoque img, .contenedorNosotros .proyectos .idoneidad .imgEnfoque img, .contenedorNosotros .proyectos .idoneidad .imgIdoneidad img {
+            margin: 1px 0;
+            width: 100%;
+            height: 100%; }
+        .contenedorNosotros .proyectos .enfoque .textoEnfoque, .contenedorNosotros .proyectos .idoneidad .textoEnfoque, .contenedorNosotros .proyectos .idoneidad .textoIdoneidad {
+          order: 3;
+          width: 100%;
+          padding: 1% 0 0 0; }
+  .contenedorMarcas {
+    width: 100%; }
+    .contenedorMarcas .padreMarcas .slider::after {
+      background: none; }
+    .contenedorMarcas .titulosSecciones .detallesTitulos {
+      top: 100%; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .contenedorNosotros .proyectos {
+    margin: 0; }
+    .contenedorNosotros .proyectos .enfoque, .contenedorNosotros .proyectos .idoneidad {
+      justify-content: center;
+      align-items: center; }
+      .contenedorNosotros .proyectos .enfoque .imgEnfoque, .contenedorNosotros .proyectos .idoneidad .imgEnfoque, .contenedorNosotros .proyectos .idoneidad .imgIdoneidad {
+        width: 100%;
+        height: 100%; }
+        .contenedorNosotros .proyectos .enfoque .imgEnfoque img, .contenedorNosotros .proyectos .idoneidad .imgEnfoque img, .contenedorNosotros .proyectos .idoneidad .imgIdoneidad img {
+          width: 90%;
+          height: 70%;
+          margin: 2px 0; }
+      .contenedorNosotros .proyectos .enfoque .textoEnfoque, .contenedorNosotros .proyectos .idoneidad .textoEnfoque, .contenedorNosotros .proyectos .idoneidad .textoIdoneidad {
+        width: 100%;
+        padding: 0; }
+        .contenedorNosotros .proyectos .enfoque .textoEnfoque p, .contenedorNosotros .proyectos .idoneidad .textoEnfoque p, .contenedorNosotros .proyectos .idoneidad .textoIdoneidad p {
+          padding-top: 2%; }
+    .contenedorNosotros .proyectos .idoneidad {
+      margin-top: 3%; }
+      .contenedorNosotros .proyectos .idoneidad .imgIdoneidad img {
+        width: 90%; } }
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .footer {
+    height: 50vh; }
+    .footer .padreFooter h2, .footer .padreFooter html body h3, html body .footer .padreFooter h3, .footer .padreFooter html body h4, html body .footer .padreFooter h4, .footer .padreFooter html body h5, html body .footer .padreFooter h5, .footer .padreFooter html body h6, html body .footer .padreFooter h6 {
+      font-size: x-large; }
+    .footer .padreFooter img {
+      width: 42px;
+      height: 42px; }
+    .footer .copyright {
+      padding: 0; }
+      .footer .copyright p {
+        color: rgba(255, 255, 255, 0.281);
+        text-align: center; } }
