@@ -5,20 +5,11 @@
   box-sizing: border-box; }
 
 html body {
-<<<<<<< HEAD
-  font-family: 'PT Mono', monospace;
-  font-family: 'Prompt', sans-serif;
-  font-family: 'Inconsolata', monospace;
-  font-family: 'Encode Sans SC', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background-color: white;
-  margin: 0;
-  padding: 0; }
+  overflow-x: hidden; }
   html body .container-fluid {
     padding: 0; }
-=======
-  font-family: 'Open Sans', sans-serif;
-  background-color: white; }
->>>>>>> 6b8d33aa3b2cb8197e5403867480f3b846e2f79c
   html body h2, html body h3, html body h4, html body h5, html body h6 {
     color: black; }
   html body .titulosSecciones {
@@ -152,7 +143,8 @@ html body {
   justify-content: space-between;
   transition: 0.7s;
   overflow-x: hidden;
-  z-index: 10; }
+  z-index: 10;
+  background-color: #fff; }
   #header-global .navbar-header-global {
     flex: 1 1;
     display: flex;
@@ -295,9 +287,7 @@ html body {
           line-height: 24px;
           font-size: 14px; }
         .contenidoHome .contenedorContenido .servicioPrincipal .content h5 {
-          margin: 20px 0;
-          font-size: 32px;
-          font-weight: 700; }
+          margin: 20px 0; }
       .contenidoHome .contenedorContenido .servicioPrincipal .servicioImg {
         display: flex;
         align-items: center;
@@ -389,7 +379,8 @@ html body {
 .contenedorPadre {
   margin-top: 120px; }
   .contenedorPadre .section-contact {
-    background-color: #f6f9fe; }
+    background-color: #f6f9fe;
+    margin: 100px 0 100px 0; }
     .contenedorPadre .section-contact .titulosSecciones .detallesTitulos {
       top: 40px; }
     .contenedorPadre .section-contact .info-box {
@@ -493,7 +484,8 @@ html body {
   height: 45vh;
   width: 100%;
   text-align: center;
-  position: relative; }
+  position: relative;
+  margin: 0; }
   .footer .padreFooter {
     display: flex;
     align-items: center;
@@ -504,7 +496,8 @@ html body {
     background-position: center;
     width: 100%;
     height: 60%;
-    margin: 50px 0 0 0; }
+    margin: 50px 0 0 0;
+    padding: 0; }
     .footer .padreFooter h2, .footer .padreFooter html body h3, html body .footer .padreFooter h3, .footer .padreFooter html body h4, html body .footer .padreFooter h4, .footer .padreFooter html body h5, html body .footer .padreFooter h5, .footer .padreFooter html body h6, html body .footer .padreFooter h6 {
       color: white;
       text-shadow: 0px 5px 5px black; }

@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-#header{
+#header-home{
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../assets/igaming-latam-consulting.png) !important;
@@ -7,7 +6,7 @@
     background-size:cover;
     overflow-x: hidden;
     
-    .navbar-header{
+    .navbar-header-home{
         width: 100%;
         display: flex;
         justify-content: space-between;
@@ -20,97 +19,12 @@
         transition: 0.7s;
         &:hover{
             background: #fff;
-            .logo{
-                color: #141414;
-                .linkLogo{
-                    text-decoration: none;
-=======
-#header-home{
-        width: 100%;
-        height: 100vh;
-        background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../assets/igaming-latam-consulting.png) !important;
-        background-position: center;
-        background-size:cover;
-        overflow-x: hidden;
-       
-        .navbar-header-home{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 18px 8%;
-            transition: background 1s;
-            position: fixed;
-            top: 0;
-            left: 0;
-            transition: 0.7s;
-            &:hover{
-                background: #fff;
-                
-                .logo-img-home{
-                    color: #141414;
-                    
-                    .link-logo-home{
-                        text-decoration: none;
-                    }
-                    h2{
-                        color: #141414 !important;
-                    }
-                }
-                .navbar-ul-home {
-                    .navbar-li-home {
-                        .navbar-a-home{
-                            color: #141414;
-                        }
-                    }
-                }
-            }
             
-            .logo-home{
-                .logo-img-home{
-                    width: calc(min(50vw, 200px));
-                    // filter: brightness(0) invert(1);
-                }
-            }
-           .navbar-ul-home {
-                .navbar-li-home{
-                    position: relative;
-                    display: inline-block;
-                    list-style: none;
-                    margin: 10px 20px;
-
-                    .navbar-a-home{
-                        text-decoration: none;
-                        color: #fff;
-                        font-weight: bold;
-                        &::after{
-                            content: '';
-                            height: 3px;
-                            width: 0%;
-                            background: rgb(58, 58, 218);
-                            position: absolute;
-                            left: 0;
-                            bottom: -10px;
-                            transition: 0.5s;
-                        }
-                        &:hover::after{
-                            width: 100%;
-                        }
-                        &:active{
-                            color: rgb(58, 58, 218);
-                        }
-                    }
-                }
-           }
-        }
-        .navbar-header-home.bottom{
-            background: #fff;
-            z-index: 10;
-            .logo-home{
+            .logo-img-home{
                 color: #141414;
-                .logo-img-home{
-                    filter: invert(0.8) grayscale(100%);
->>>>>>> 6b8d33aa3b2cb8197e5403867480f3b846e2f79c
+                
+                .link-logo-home{
+                    text-decoration: none;
                 }
                 h2{
                     color: #141414 !important;
@@ -124,49 +38,21 @@
                 }
             }
         }
-<<<<<<< HEAD
         
-        .logo {
-            display: flex;
-            align-items: center;
-            font-size: 26px;
-            color: #fff;
-            .logoImg{
-                width: calc(min(50vw, 60px));
-                margin-right: 10px;
-            }
-            h2{
-                color: #fff !important;
-                span {
-                    color:  rgb(98, 98, 189);
-                }
-=======
-        #navbarNav{
-            justify-content: flex-end;
-        }
-        .content {
-            margin-top: 18%;
-            color: #fff;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            h1{
-                font-family: 'Open Sans', sans-serif;
-                font-size: 45px;
-                font-weight: 600;
-                padding: 20px;
->>>>>>> 6b8d33aa3b2cb8197e5403867480f3b846e2f79c
+        .logo-home{
+            .logo-img-home{
+                width: calc(min(50vw, 200px));
+                // filter: brightness(0) invert(1);
             }
         }
-        .navbar-ul {
-            .navbar-li{
+        .navbar-ul-home {
+            .navbar-li-home{
                 position: relative;
                 display: inline-block;
                 list-style: none;
                 margin: 10px 20px;
                 
-                .navbar-a{
+                .navbar-a-home{
                     text-decoration: none;
                     color: #fff;
                     font-weight: bold;
@@ -190,18 +76,21 @@
             }
         }
     }
-    .navbar-header.bottom{
+    .navbar-header-home.bottom{
         background: #fff;
         z-index: 10;
-        .logo{
+        .logo-home{
             color: #141414;
+            .logo-img-home{
+                filter: invert(0.8) grayscale(100%);
+            }
             h2{
                 color: #141414 !important;
             }
         }
-        .navbar-ul {
-            .navbar-li {
-                .navbar-a{
+        .navbar-ul-home {
+            .navbar-li-home {
+                .navbar-a-home{
                     color: #141414;
                 }
             }
@@ -211,16 +100,17 @@
         justify-content: flex-end;
     }
     .content {
-        margin-top: 9%;
-        margin-left: 9%;
+        margin-top: 18%;
         color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         h1{
-            font-size: 120px;
-            line-height: 140px;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 45px;
             font-weight: 600;
-            span{
-                text-transform: lowercase;
-            }
+            padding: 20px;
         }
         p{
             max-width: 500px;
@@ -263,4 +153,3 @@
         opacity: 1;
     }
 }
-
