@@ -323,7 +323,7 @@ html body {
         color: rgba(0, 0, 0, 0.87); }
 
 .contenedorNosotros {
-  margin: 120px 120px 0 120px; }
+  margin: 120px 120px 70px 120px; }
   .contenedorNosotros p {
     font-size: large; }
   .contenedorNosotros .padreExperiencia {
@@ -355,7 +355,7 @@ html body {
     .contenedorNosotros .proyectos .enfoque, .contenedorNosotros .proyectos .idoneidad {
       display: flex;
       width: 100%;
-      height: 600px; }
+      height: min-content; }
       .contenedorNosotros .proyectos .enfoque .imgEnfoque, .contenedorNosotros .proyectos .idoneidad .imgEnfoque, .contenedorNosotros .proyectos .idoneidad .imgIdoneidad {
         display: flex;
         flex-direction: column;
