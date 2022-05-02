@@ -45,18 +45,18 @@
             .imgEnfoque{ 
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
                 align-items: center;
-                width:50%;
+                width:45%;
                 height: 100%;
                 img{
                     border-radius: 20px;
                     width: 500px;
                     height: 250px;
+                    margin:5px 0;
                 }
             }
             .textoEnfoque{
-                width: 50%;
+                width: 65%;
                 padding: 130px 20px 0 50px;
                 p{
                     text-align: justify;

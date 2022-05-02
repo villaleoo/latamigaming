@@ -360,16 +360,16 @@ html body {
       .contenedorNosotros .proyectos .enfoque .imgEnfoque, .contenedorNosotros .proyectos .idoneidad .imgEnfoque, .contenedorNosotros .proyectos .idoneidad .imgIdoneidad {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         align-items: center;
-        width: 50%;
+        width: 45%;
         height: 100%; }
         .contenedorNosotros .proyectos .enfoque .imgEnfoque img, .contenedorNosotros .proyectos .idoneidad .imgEnfoque img, .contenedorNosotros .proyectos .idoneidad .imgIdoneidad img {
           border-radius: 20px;
           width: 500px;
-          height: 250px; }
+          height: 250px;
+          margin: 5px 0; }
       .contenedorNosotros .proyectos .enfoque .textoEnfoque, .contenedorNosotros .proyectos .idoneidad .textoEnfoque, .contenedorNosotros .proyectos .idoneidad .textoIdoneidad {
-        width: 50%;
+        width: 65%;
         padding: 130px 20px 0 50px; }
         .contenedorNosotros .proyectos .enfoque .textoEnfoque p, .contenedorNosotros .proyectos .idoneidad .textoEnfoque p, .contenedorNosotros .proyectos .idoneidad .textoIdoneidad p {
           text-align: justify; }
