@@ -19,15 +19,14 @@
         transition: 0.7s;
         &:hover{
             background: #fff;
-            
-            .logo-img-home{
-                color: #141414;
-                
-                .link-logo-home{
+            filter: none;
+            .logo-home{
+                filter: none;
+                .linkLogo{
                     text-decoration: none;
-                }
-                h2{
-                    color: #141414 !important;
+                    .logo-img-home{
+                        filter: none;
+                    }
                 }
             }
             .navbar-ul-home {
@@ -42,7 +41,8 @@
         .logo-home{
             .logo-img-home{
                 width: calc(min(50vw, 200px));
-                // filter: brightness(0) invert(1);
+                filter: brightness(140%) invert(200%)  brightness(200%)  hue-rotate(186deg) ;
+                // filter: invert(55%)  saturate(243%)  ;
             }
         }
         .navbar-ul-home {
@@ -82,7 +82,7 @@
         .logo-home{
             color: #141414;
             .logo-img-home{
-                filter: invert(0.8) grayscale(100%);
+                filter: none;
             }
             h2{
                 color: #141414 !important;
@@ -122,13 +122,40 @@
             margin-top: 30px;
             opacity: 0;
             .btnLink{
+                width: 200px;
                 color: #fff;
                 text-decoration: none;
                 display: inline-block;
                 border: 2px solid #fff;
-                padding: 10px 35px;
-                border-radius: 30px;
+                background: transparent;
+                padding: 15px 0;
+                border-radius: 25px;
                 margin-right: 15px;
+                position: relative;
+                overflow: hidden;
+                font-size: 20px;
+                cursor: pointer;
+                span{
+                    background: #fff;
+                    height: 100%;
+                    width: 0%;
+                    border-radius: 25px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    z-index: -1;
+                    transition: 0.5s;
+                    
+                }
+                &:hover span{
+                    width: 100%;
+                   
+                    height: 100%;
+                }
+                &:hover{
+                    color: #141414;
+                    border: 2px solid transparent;
+                }
             }
         }
         .slide-left{

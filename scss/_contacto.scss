@@ -1,13 +1,26 @@
 .contenedorPadre{
-    margin-top:120px;
+    margin: 120px 0 50px 0;
+    .titulosSeccionesContacto{
+      padding-top: 20px !important;
+      text-align: center;
+      margin: 20px 0 0 0;
+      height: min-content;
+      .detallesTitulos{
+          position: absolute;
+            top: 85px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-style: solid;
+            border-radius: 10px;
+            color:rgb(58, 58, 218);
+            width: 120px;
+      }
+    }
     .section-contact {
       background-color: #f6f9fe;
-      margin:100px 0 100px 0;
-      .titulosSecciones{
-        .detallesTitulos{
-          top: 40px;
-        }
-      }
+      margin:100px 0 50px 0;
+      
         .info-box{
                 color: #444444;
                 text-align: center;
