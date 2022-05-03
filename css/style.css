@@ -142,7 +142,8 @@ html body {
           height: 100%; }
         #header-home .content .links .btnLink:hover {
           color: #141414;
-          border: 2px solid transparent; }
+          border: 2px solid transparent;
+          font-weight: bold; }
     #header-home .content .slide-left {
       animation: slideleft 1s linear forwards; }
     #header-home .content p.slide-left {
