@@ -64,6 +64,7 @@
         }
     }
     .contenedorMarcas{
+        width: 100%;
         .padreMarcas{
             overflow-x: hidden;
             .slider{
@@ -73,8 +74,8 @@
                 }
             }
         }
-        width: 100%;
         .titulosSecciones{
+            width: 100%;
             .detallesTitulos{
                 top:100%;
             }

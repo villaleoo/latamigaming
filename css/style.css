@@ -666,8 +666,10 @@ html {
         width: 100%; }
         .contenedorMarcas .padreMarcas .slider::after {
           background: none; }
-    .contenedorMarcas .titulosSecciones .detallesTitulos {
-      top: 100%; } }
+    .contenedorMarcas .titulosSecciones {
+      width: 100%; }
+      .contenedorMarcas .titulosSecciones .detallesTitulos {
+        top: 100%; } }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .contenedorNosotros .proyectos .enfoque, .contenedorNosotros .proyectos .idoneidad {
