@@ -7,7 +7,7 @@
 html {
   margin: 0;
   padding: 0;
-  background-color: yellowgreen; }
+  background-color: #fff; }
   html body {
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden; }
@@ -115,7 +115,7 @@ html {
     flex-direction: column; }
     #header-home .content h1 {
       font-family: 'Open Sans', sans-serif;
-      font-size: 45px;
+      font-size: 2.813rem;
       font-weight: 600;
       padding: 20px; }
     #header-home .content p {
@@ -126,36 +126,21 @@ html {
       margin-top: 30px;
       opacity: 0; }
       #header-home .content .links .btnLink {
-        width: 200px;
-        color: #fff;
-        text-decoration: none;
         display: inline-block;
+        background-color: transparent;
+        color: #fff;
+        padding: 1.125rem 2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: .5rem;
         border: 2px solid #fff;
-        background: transparent;
-        padding: 15px 0;
-        border-radius: 25px;
-        margin-right: 15px;
-        position: relative;
-        overflow: hidden;
-        font-size: 20px;
-        cursor: pointer; }
-        #header-home .content .links .btnLink span {
-          background: #fff;
-          height: 100%;
-          width: 0%;
-          border-radius: 25px;
-          position: absolute;
-          left: 0;
-          bottom: 0;
-          z-index: -1;
-          transition: 0.5s; }
-        #header-home .content .links .btnLink:hover span {
-          width: 100%;
-          height: 100%; }
+        transition: .3s;
+        cursor: pointer;
+        width: 100%; }
         #header-home .content .links .btnLink:hover {
+          background-color: #fff;
           color: #141414;
-          border: 2px solid transparent;
-          font-weight: bold; }
+          transform: translateY(-0.2rem); }
     #header-home .content .slide-left {
       animation: slideleft 1s linear forwards; }
     #header-home .content p.slide-left {
@@ -595,6 +580,55 @@ html {
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   html body p {
     font-size: large; } }
+
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  #header-home .navbar-header-home {
+    z-index: 1;
+    transition: none;
+    background: #fff; }
+    #header-home .navbar-header-home .logo-home .logo-img-home {
+      filter: none; }
+    #header-home .navbar-header-home .navbar-ul-home {
+      filter: none; }
+      #header-home .navbar-header-home .navbar-ul-home .navbar-li-home {
+        color: #141414; }
+        #header-home .navbar-header-home .navbar-ul-home .navbar-li-home .navbar-a-home {
+          color: #141414; }
+          #header-home .navbar-header-home .navbar-ul-home .navbar-li-home .navbar-a-home::after {
+            content: '';
+            height: 3px;
+            width: 0%;
+            background: #3a3ada;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s; }
+          #header-home .navbar-header-home .navbar-ul-home .navbar-li-home .navbar-a-home:hover::after {
+            width: 15%; }
+          #header-home .navbar-header-home .navbar-ul-home .navbar-li-home .navbar-a-home:focus {
+            color: #3a3ada; }
+          #header-home .navbar-header-home .navbar-ul-home .navbar-li-home .navbar-a-home:target {
+            color: #3a3ada; }
+  #header-home .content {
+    margin-top: 12rem;
+    text-align: center; }
+    #header-home .content h1 {
+      font-size: 2.5rem; }
+    #header-home .content p {
+      font-size: medium; }
+    #header-home .content .links {
+      margin-top: 1.875rem; }
+      #header-home .content .links .btnLink {
+        width: 100%; }
+  .navbar-icon-button {
+    background: #fff; }
+  .navbar-icon-hambur {
+    color: #141414; } }
+
+@media only screen and (min-width: 0px) and (max-width: 812px) {
+  #header-home .content {
+    margin-top: 15rem;
+    text-align: center; } }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   #header-global .navbar-header-global {
