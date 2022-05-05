@@ -1,22 +1,28 @@
 //MOBILE
 @media only screen and (min-width:0px) and (max-width:768px){
-    body{
-        .contenedorPadre{
-            padding: 0;
-            margin:0;
+    html{
+        margin: 0;
+        body{
+            .contenedorPadre{
+                padding: 0;
+                margin:0;
+            }
+            p{
+                font-size: medium;
+            }
+        
         }
-        p{
-            font-size: medium;
-        }
-    
     }
 
 }
 //LAPTOP
 @media only screen and (min-width:1024px) and (max-width:1440px){
-    body{
-        p{
-            font-size: large;
+    html{
+        body{
+            
+            p{
+                font-size: large;
+            }
         }
     }
 }

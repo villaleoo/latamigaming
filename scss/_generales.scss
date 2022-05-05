@@ -5,14 +5,21 @@
     box-sizing: border-box;
 }
 html{
+    margin: 0;
+    padding: 0;
+    background-color: yellowgreen;
     body{
         font-family: 'Open Sans', sans-serif;
-        background-color: white;
         overflow-x: hidden;
-        .container-fluid{
-            padding: 0;
+        p{
+            font-family: "Open Sans", sans-serif;
+            line-height: 24px;
+            font-size: 14px;
         }
-
+        .contenedorPadre{
+            padding: 0;
+            margin:96px 0 0px 0;
+        }
         h2{
             color:black;
         }
@@ -32,6 +39,7 @@ html{
             text-align: center;
             margin: 20px 0 0 0;
             height: min-content;
+            width: 100%;
         }
         .detallesTitulos{
             position: absolute;

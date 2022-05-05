@@ -1,5 +1,6 @@
 .contenedorNosotros{
-    margin:120px 120px 0 120px;
+    width: 100%;
+    padding:0 140px 100px 140px;
     .padreExperiencia{
         margin:100px 0 0 0;
         height: min-content;
@@ -53,7 +54,7 @@
             }
             .textoEnfoque{
                 width: 65%;
-                padding: 130px 20px 0 50px;
+                padding: 130px 20px 0 0;
                 p{
                     text-align: justify;
                 }
@@ -66,7 +67,7 @@
             }
             .textoIdoneidad{
                 @extend .textoEnfoque;
-                padding: 170px 50px 0 20px;
+                padding: 170px 0 0 20px;
             }
         }
     }  
@@ -79,11 +80,14 @@ $animationSpeed: 40s;
 
 
 .contenedorMarcas{
+    width: 100%;
     .titulosSecciones{
         height:min-content;
+        width: 100%;
     }
     .padreMarcas{
-        margin:50px 0 50px 0;
+        width: 100%;
+        margin:80px 0 50px 0;
         .slider {
             box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
             height: 100px;

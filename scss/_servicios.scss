@@ -1,12 +1,11 @@
 .contenedorServicios{
     width: 100%;
-    margin:120px 0 50px 0;
-    padding: 0 120px 0 120px;
+    padding: 0 140px 0 140px;
     .padreServicios{
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        margin:100px 0 0 0;
+        margin:100px 0 80px 0;
         background-color: rgba(58, 58, 218, 0.205);
         border-radius: 30px;
         .contenidoServicios{
@@ -29,6 +28,8 @@
                 .listaServicios{
                     margin: 0 0 0 40px;
                     color: rgba(0, 0, 0, 0.87);
+                    line-height: 24px;
+                    font-size: 14px;
                 }
             }
         }
