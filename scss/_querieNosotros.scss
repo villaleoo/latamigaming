@@ -72,11 +72,13 @@
         width: 100%;
         .padreMarcas{
             overflow-x: hidden;
+            width: 100%;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             .slider{
                 width: 100%;
-                &::after{
-                    background: none;
-                }
             }
         }
         .titulosSecciones{

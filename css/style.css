@@ -17,7 +17,10 @@ html {
       font-size: 14px; }
     html body .contenedorPadre {
       padding: 0;
-      margin: 96px 0 0px 0; }
+      margin: 96px 0 0 0;
+      border: none; }
+    html body .row {
+      margin: 0; }
     html body h2, html body h3, html body h4, html body h5, html body h6 {
       color: black; }
     html body .titulosSecciones {
@@ -584,7 +587,8 @@ html {
     margin: 0; }
     html body .contenedorPadre {
       padding: 0;
-      margin: 0; }
+      margin: 77px 0 0 0;
+      width: 100%; }
     html body p {
       font-size: medium; } }
 
@@ -663,11 +667,14 @@ html {
   .contenedorMarcas {
     width: 100%; }
     .contenedorMarcas .padreMarcas {
-      overflow-x: hidden; }
+      overflow-x: hidden;
+      width: 100%;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
       .contenedorMarcas .padreMarcas .slider {
         width: 100%; }
-        .contenedorMarcas .padreMarcas .slider::after {
-          background: none; }
     .contenedorMarcas .titulosSecciones {
       width: 100%; }
       .contenedorMarcas .titulosSecciones .detallesTitulos {

@@ -18,7 +18,11 @@ html{
         }
         .contenedorPadre{
             padding: 0;
-            margin:96px 0 0px 0;
+            margin:96px 0 0 0;
+            border: none;
+        }
+        .row{
+            margin:0;
         }
         h2{
             color:black;
