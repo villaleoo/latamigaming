@@ -1,131 +1,47 @@
 .padreHome{
-    margin-top: 120px;
-    height: 75vh;
-    
-    .contenedorHome{
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(../assets/igaming-latam-consulting.png);
-        background-size:cover;
-        background-position: center;
-        .homeBanner{
-            display: flex;
-            flex-direction: column;
+    margin:30px 0 0 0 ;
+    .contenidoHome{
+        padding:0 100px 0 100px;
+        overflow: hidden;
+        margin-bottom: 70px;
+        p{
+            color:rgba(0, 0, 0, 0.89);
+        }
+        .contenedorContenido{
+            h2{
+                margin-bottom: 100px;
+                margin-top: 20px;
+                font-weight: bolder;
+            }
+            .detallesTitulos{
+                top:90px;
+            }
+            padding: 0;
+            text-align: center;
             margin: 0;
-            .estilosNombre{
-                margin: 0;
-                height: 70%;
-                padding:2% 0 20px 70px;
-
-                .nombrePrincipal{
-                    color: hsl(0, 0%, 30%);
-                    font-size: 8rem;
-                    font-weight: bold;
-                    font-family: monospace;
-                    cursor: pointer;
-                    text-transform: uppercase;
-                    background: linear-gradient(
-                        to right,
-                        hsl(0, 0%, 30%),
-                        hsl(0, 0%, 100%),
-                        hsl(0,0%, 30%)
-                    );
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    animation: shine 3s infinite linear;
-                    
-                    @keyframes shine {
-                        0%{
-                            background-position: 0;
-                        }
-                        60%{
-                            background-position: 600px;
-                        }
-                        100%{
-                            background-position: 600px;
-                        }
-                        
+            .servicioPrincipal{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px 0;
+                margin-bottom: 80px;
+                background: #f6f9fe;
+                .content{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+    
+                    h5{
+                        margin: 20px 0;
                     }
                 }
-                .subtitulo{
-                    color:gray;
-                    font-size: large;
-                    text-align: justify;
-                    margin: 3% 0 0 15px;
-                    width: 50%;
+                .servicioImg{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
-                .botonHome{
-                    width: 200px;
-                    height: 80px;
-                    margin:2% 0 0 20%;
-                }
-            }
-            .contactoHome{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                position: absolute;
-                bottom: 100px;
-                right: 120px;
-                height: 200px;
-                width: 350px;
-                border: solid white;
-                .numeroContacto{
-                    color: #fff;
-                }
-                .textoContacto{
-                    color: aliceblue;
-                    text-align: center;
-                    margin-top: 8%;
-                }
-            }
-        }
-    }
-}
-.contenidoHome{
-    padding:10px 100px 0px 100px;
-    overflow: hidden;
-    margin-bottom: 70px;
-    p{
-        color:rgba(0, 0, 0, 0.89);
-    }
-    .contenedorContenido{
-        h2{
-            margin-bottom: 100px;
-            margin-top: 20px;
-            font-weight: bolder;
-        }
-        .detallesTitulos{
-            top:90px;
-        }
-        padding: 0;
-        text-align: center;
-        margin: 0;
-        .servicioPrincipal{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px 0;
-            margin-bottom: 80px;
-            background: #f6f9fe;
-            .content{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-
-                h5{
-                    margin: 20px 0;
-                }
-            }
-            .servicioImg{
-                display: flex;
-                align-items: center;
-                justify-content: center;
             }
         }
     }

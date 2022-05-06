@@ -17,6 +17,8 @@ html {
       padding: 0;
       margin: 96px 0 0 0;
       border: none; }
+    html body .container-fluid {
+      padding: 0; }
     html body .row {
       margin: 0; }
     html body h2, html body h3, html body h4, html body h5, html body h6 {
@@ -208,106 +210,42 @@ html {
       color: #141414; }
 
 .padreHome {
-  margin-top: 120px;
-  height: 75vh; }
-  .padreHome .contenedorHome {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../assets/igaming-latam-consulting.png);
-    background-size: cover;
-    background-position: center; }
-    .padreHome .contenedorHome .homeBanner {
-      display: flex;
-      flex-direction: column;
+  margin: 30px 0 0 0; }
+  .padreHome .contenidoHome {
+    padding: 0 100px 0 100px;
+    overflow: hidden;
+    margin-bottom: 70px; }
+    .padreHome .contenidoHome p {
+      color: rgba(0, 0, 0, 0.89); }
+    .padreHome .contenidoHome .contenedorContenido {
+      padding: 0;
+      text-align: center;
       margin: 0; }
-      .padreHome .contenedorHome .homeBanner .estilosNombre {
-        margin: 0;
-        height: 70%;
-        padding: 2% 0 20px 70px; }
-        .padreHome .contenedorHome .homeBanner .estilosNombre .nombrePrincipal {
-          color: #4d4d4d;
-          font-size: 8rem;
-          font-weight: bold;
-          font-family: monospace;
-          cursor: pointer;
-          text-transform: uppercase;
-          background: linear-gradient(to right, #4d4d4d, white, #4d4d4d);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          animation: shine 3s infinite linear; }
-
-@keyframes shine {
-  0% {
-    background-position: 0; }
-  60% {
-    background-position: 600px; }
-  100% {
-    background-position: 600px; } }
-        .padreHome .contenedorHome .homeBanner .estilosNombre .subtitulo {
-          color: gray;
-          font-size: large;
-          text-align: justify;
-          margin: 3% 0 0 15px;
-          width: 50%; }
-        .padreHome .contenedorHome .homeBanner .estilosNombre .botonHome {
-          width: 200px;
-          height: 80px;
-          margin: 2% 0 0 20%; }
-      .padreHome .contenedorHome .homeBanner .contactoHome {
+      .padreHome .contenidoHome .contenedorContenido h2, .padreHome .contenidoHome .contenedorContenido html body h3, html body .padreHome .contenidoHome .contenedorContenido h3, .padreHome .contenidoHome .contenedorContenido html body h4, html body .padreHome .contenidoHome .contenedorContenido h4, .padreHome .contenidoHome .contenedorContenido html body h5, html body .padreHome .contenidoHome .contenedorContenido h5, .padreHome .contenidoHome .contenedorContenido html body h6, html body .padreHome .contenidoHome .contenedorContenido h6 {
+        margin-bottom: 100px;
+        margin-top: 20px;
+        font-weight: bolder; }
+      .padreHome .contenidoHome .contenedorContenido .detallesTitulos {
+        top: 90px; }
+      .padreHome .contenidoHome .contenedorContenido .servicioPrincipal {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        bottom: 100px;
-        right: 120px;
-        height: 200px;
-        width: 350px;
-        border: solid white; }
-        .padreHome .contenedorHome .homeBanner .contactoHome .numeroContacto {
-          color: #fff; }
-        .padreHome .contenedorHome .homeBanner .contactoHome .textoContacto {
-          color: aliceblue;
-          text-align: center;
-          margin-top: 8%; }
-
-.contenidoHome {
-  padding: 10px 100px 0px 100px;
-  overflow: hidden;
-  margin-bottom: 70px; }
-  .contenidoHome p {
-    color: rgba(0, 0, 0, 0.89); }
-  .contenidoHome .contenedorContenido {
-    padding: 0;
-    text-align: center;
-    margin: 0; }
-    .contenidoHome .contenedorContenido h2, .contenidoHome .contenedorContenido html body h3, html body .contenidoHome .contenedorContenido h3, .contenidoHome .contenedorContenido html body h4, html body .contenidoHome .contenedorContenido h4, .contenidoHome .contenedorContenido html body h5, html body .contenidoHome .contenedorContenido h5, .contenidoHome .contenedorContenido html body h6, html body .contenidoHome .contenedorContenido h6 {
-      margin-bottom: 100px;
-      margin-top: 20px;
-      font-weight: bolder; }
-    .contenidoHome .contenedorContenido .detallesTitulos {
-      top: 90px; }
-    .contenidoHome .contenedorContenido .servicioPrincipal {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 20px 0;
-      margin-bottom: 80px;
-      background: #f6f9fe; }
-      .contenidoHome .contenedorContenido .servicioPrincipal .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; }
-        .contenidoHome .contenedorContenido .servicioPrincipal .content h5 {
-          margin: 20px 0; }
-      .contenidoHome .contenedorContenido .servicioPrincipal .servicioImg {
-        display: flex;
-        align-items: center;
-        justify-content: center; }
+        padding: 20px 0;
+        margin-bottom: 80px;
+        background: #f6f9fe; }
+        .padreHome .contenidoHome .contenedorContenido .servicioPrincipal .content {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center; }
+          .padreHome .contenidoHome .contenedorContenido .servicioPrincipal .content h5 {
+            margin: 20px 0; }
+        .padreHome .contenidoHome .contenedorContenido .servicioPrincipal .servicioImg {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
 
 .contenedorServicios {
   width: 100%;
