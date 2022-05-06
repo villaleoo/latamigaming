@@ -12,7 +12,8 @@ html {
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden; }
     html body p {
-      font-family: "Open Sans", sans-serif; }
+      font-family: "Open Sans", sans-serif;
+      font-size: smaller !important; }
     html body .contenedorPadre {
       padding: 0;
       margin: 96px 0 0 0;
@@ -280,6 +281,8 @@ html {
 .contenedorNosotros {
   width: 100%;
   padding: 0 140px 50px 140px; }
+  .contenedorNosotros h6 {
+    font-weight: bold; }
   .contenedorNosotros .padreExperiencia {
     margin: 100px 0 0 0;
     height: min-content; }
