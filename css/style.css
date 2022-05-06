@@ -12,9 +12,7 @@ html {
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden; }
     html body p {
-      font-family: "Open Sans", sans-serif;
-      line-height: 24px;
-      font-size: 14px; }
+      font-family: "Open Sans", sans-serif; }
     html body .contenedorPadre {
       padding: 0;
       margin: 96px 0 0 0;
@@ -575,55 +573,67 @@ html {
       margin: 77px 0 0 0;
       width: 100%; }
     html body p {
-      font-size: medium; } }
+      font-size: small; }
+    html body h1 {
+      font-size: 2rem; }
+    html body h2, html body h3, html body h4, html body h5, html body h6 {
+      font-size: 1.125rem; }
+    html body h5 {
+      font-size: 1rem;
+      font-weight: bold; } }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  html body p {
+    font-size: medium; } }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   html body p {
     font-size: large; } }
 
 @media only screen and (min-width: 0px) and (max-width: 1024px) {
-  #header-home .navbar-header-home {
-    z-index: 1;
-    transition: none;
-    background: #fff; }
-    #header-home .navbar-header-home .logo-home .logo-img-home {
-      filter: none; }
-    #header-home .navbar-header-home .navbar-ul-home {
-      filter: none; }
-      #header-home .navbar-header-home .navbar-ul-home .navbar-li-home {
-        color: #141414; }
-        #header-home .navbar-header-home .navbar-ul-home .navbar-li-home .navbar-a-home {
+  #header-home {
+    height: 100vh; }
+    #header-home .navbar-header-home {
+      z-index: 1;
+      transition: none;
+      background: #fff; }
+      #header-home .navbar-header-home .logo-home .logo-img-home {
+        filter: none; }
+      #header-home .navbar-header-home .navbar-ul-home {
+        filter: none; }
+        #header-home .navbar-header-home .navbar-ul-home .navbar-li-home {
           color: #141414; }
-          #header-home .navbar-header-home .navbar-ul-home .navbar-li-home .navbar-a-home::after {
-            content: '';
-            height: 3px;
-            width: 0%;
-            background: #3a3ada;
-            position: absolute;
-            left: 0;
-            bottom: -10px;
-            transition: 0.5s; }
-          #header-home .navbar-header-home .navbar-ul-home .navbar-li-home .navbar-a-home:hover::after {
-            width: 15%; }
-          #header-home .navbar-header-home .navbar-ul-home .navbar-li-home .navbar-a-home:focus {
-            color: #3a3ada; }
-          #header-home .navbar-header-home .navbar-ul-home .navbar-li-home .navbar-a-home:target {
-            color: #3a3ada; }
-  #header-home .content {
-    margin-top: 12rem;
-    text-align: center; }
-    #header-home .content h1 {
-      font-size: 2.5rem; }
-    #header-home .content p {
-      font-size: medium; }
-    #header-home .content .links {
-      margin-top: 1.875rem; }
-      #header-home .content .links .btnLink {
-        width: 100%; }
+          #header-home .navbar-header-home .navbar-ul-home .navbar-li-home .navbar-a-home {
+            color: #141414; }
+            #header-home .navbar-header-home .navbar-ul-home .navbar-li-home .navbar-a-home::after {
+              content: '';
+              height: 3px;
+              width: 0%;
+              background: #3a3ada;
+              position: absolute;
+              left: 0;
+              bottom: -10px;
+              transition: 0.5s; }
+            #header-home .navbar-header-home .navbar-ul-home .navbar-li-home .navbar-a-home:hover::after {
+              width: 15%; }
+            #header-home .navbar-header-home .navbar-ul-home .navbar-li-home .navbar-a-home:focus {
+              color: #3a3ada; }
+            #header-home .navbar-header-home .navbar-ul-home .navbar-li-home .navbar-a-home:target {
+              color: #3a3ada; }
+    #header-home .content {
+      margin-top: 12rem;
+      text-align: center; }
+      #header-home .content .links {
+        margin-top: 1.875rem; }
+        #header-home .content .links .btnLink {
+          width: 100%; }
   .navbar-icon-button {
     background: #fff; }
   .navbar-icon-hambur {
-    color: #141414; } }
+    color: #141414; }
+  .contenidoHome .contenedorContenido .servicioPrincipal {
+    padding: 0;
+    margin-bottom: 1.875rem; } }
 
 @media only screen and (min-width: 0px) and (max-width: 812px) {
   #header-home .content {

@@ -9,12 +9,32 @@
                 width: 100%;
             }
             p{
-                font-size: medium;
+                font-size: small;
             }
-        
+            h1{
+                font-size: 2rem;
+            }
+            h2{
+                font-size: 1.125rem;
+            }
+            h5{
+                font-size: 1rem;
+                font-weight: bold;
+            }
         }
     }
 
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px){
+    html{
+        body{
+            
+            p{
+                font-size: medium;
+            }
+        }
+    }
 }
 //LAPTOP
 @media only screen and (min-width:1024px) and (max-width:1440px){
