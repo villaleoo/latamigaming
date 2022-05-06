@@ -402,7 +402,11 @@ html {
 
 .contenedorContacto .section-contact {
   background-color: #f6f9fe;
-  margin: 100px 0 50px 0; }
+  margin: 3.125rem 0 1.563rem 0; }
+  .contenedorContacto .section-contact .container p {
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem; }
   .contenedorContacto .section-contact .info-box {
     color: #444444;
     text-align: center;
