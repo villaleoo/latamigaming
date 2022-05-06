@@ -8,6 +8,9 @@
             color:rgba(0, 0, 0, 0.89);
         }
         .contenedorContenido{
+            padding: 0;
+            text-align: center;
+            margin: 0;
             h2{
                 margin-bottom: 100px;
                 margin-top: 20px;
@@ -16,16 +19,13 @@
             .detallesTitulos{
                 top:90px;
             }
-            padding: 0;
-            text-align: center;
-            margin: 0;
             .servicioPrincipal{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                padding: 20px 0;
-                margin-bottom: 80px;
+                padding: 20px  0;
+                margin-bottom: 20px;
                 background: #f6f9fe;
                 .content{
                     display: flex;
