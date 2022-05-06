@@ -7,13 +7,14 @@
 html {
   margin: 0;
   padding: 0;
-  background-color: #fff; }
+  background-color: #fff;
+  scroll-behavior: smooth; }
   html body {
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden; }
     html body p {
       font-family: "Open Sans", sans-serif;
-      font-size: smaller !important; }
+      font-size: smaller; }
     html body .contenedorPadre {
       padding: 0;
       margin: 96px 0 0 0;
@@ -148,6 +149,26 @@ html {
       animation-delay: 1s; }
     #header-home .content .links.slide-left {
       animation-delay: 2s; }
+    #header-home .content .scroll-down {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      max-width: 100px;
+      margin: 0 auto; }
+      #header-home .content .scroll-down:hover {
+        animation: opacidad 0.5s infinite alternate; }
+      #header-home .content .scroll-down .icon-sroll-down {
+        width: 5rem;
+        fill: #fff;
+        margin-top: 2.5rem; }
+
+@keyframes opacidad {
+  from {
+    opacity: 7;
+    transform: translateY(-0.7rem); }
+  to {
+    opacity: 0;
+    transform: translateY(0.5rem); } }
 
 @keyframes slideleft {
   0% {
@@ -517,7 +538,7 @@ html {
       margin: 77px 0 0 0;
       width: 100%; }
     html body p {
-      font-size: small; }
+      font-size: smaller; }
     html body h1 {
       font-size: 2rem; }
     html body h2, html body h3, html body h4, html body h5, html body h6 {
@@ -528,11 +549,11 @@ html {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   html body p {
-    font-size: medium; } }
+    font-size: smaller; } }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   html body p {
-    font-size: large; } }
+    font-size: smaller; } }
 
 @media only screen and (min-width: 0px) and (max-width: 1024px) {
   #header-home {

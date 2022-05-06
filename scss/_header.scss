@@ -150,9 +150,36 @@
         .links.slide-left{
             animation-delay: 2s;
         }
+        .scroll-down {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            max-width: 100px;
+            margin: 0 auto;
+            &:hover{
+                animation: opacidad 0.5s infinite alternate;
+                
+            }
+            .icon-sroll-down{
+                width: 5rem;
+                fill: #fff;
+                margin-top: 2.5rem;
+            }
+        }
         
     }
 }
+  @keyframes opacidad {
+    from {
+      opacity: 7;
+      transform: translateY(-.7rem);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(.5rem);
+    }
+  }
 @keyframes slideleft{
     0% {
         transform: translate(100px);
