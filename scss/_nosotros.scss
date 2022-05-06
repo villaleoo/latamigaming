@@ -84,10 +84,14 @@ $animationSpeed: 40s;
     .titulosSecciones{
         height:min-content;
         width: 100%;
+        padding: 50px 0 0 0 ;
+        .detallesTitulos{
+            top:0;
+        }
     }
     .padreMarcas{
         width: 100%;
-        margin:80px 0 50px 0;
+        margin:10px 0 50px 0;
         .slider {
             box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
             height: 100px;
