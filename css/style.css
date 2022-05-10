@@ -273,14 +273,36 @@ html {
 
 .contenedorServicios {
   width: 100%;
-  padding: 0 140px 0 140px; }
+  padding: 0 100px 0 100px; }
   .contenedorServicios .padreServicios {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 100px 0 80px 0;
-    background-color: rgba(58, 58, 218, 0.205);
+    margin: 50px 0 0 0;
+    background-color: #f6f9fe;
     border-radius: 30px; }
+    .contenedorServicios .padreServicios .info-services {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 1%; }
+      .contenedorServicios .padreServicios .info-services .info-services-p {
+        text-align: center;
+        font-weight: bold; }
+    .contenedorServicios .padreServicios .service-info-fin {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 2%;
+      margin-bottom: 2%; }
+      .contenedorServicios .padreServicios .service-info-fin .service-info-p-fin {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem; }
     .contenedorServicios .padreServicios .contenidoServicios {
       display: flex;
       align-items: center;
@@ -300,6 +322,9 @@ html {
         color: rgba(0, 0, 0, 0.87);
         line-height: 24px;
         font-size: 14px; }
+        .contenedorServicios .padreServicios .contenidoServicios .textoServicios .listaServicios li {
+          list-style: disc;
+          font-size: 0.875rem; }
 
 .contenedorNosotros {
   width: 100%;
