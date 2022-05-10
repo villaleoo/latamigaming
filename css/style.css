@@ -289,8 +289,7 @@ html {
       text-align: center;
       margin-top: 1%; }
       .contenedorServicios .padreServicios .info-services .info-services-p {
-        text-align: center;
-        font-weight: bold; }
+        text-align: center; }
     .contenedorServicios .padreServicios .service-info-fin {
       display: flex;
       flex-direction: column;
@@ -301,7 +300,6 @@ html {
       margin-bottom: 2%; }
       .contenedorServicios .padreServicios .service-info-fin .service-info-p-fin {
         text-align: center;
-        font-weight: bold;
         font-size: 1rem; }
     .contenedorServicios .padreServicios .contenidoServicios {
       display: flex;
