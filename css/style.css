@@ -609,10 +609,34 @@ html {
     margin-top: 15rem;
     text-align: center; } }
 
-@media only screen and (min-width: 0px) and (max-width: 768px) {
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
   #header-global .navbar-header-global {
     flex: none;
-    width: 100%; } }
+    width: 100%;
+    z-index: 1;
+    transition: none;
+    background: #fff; }
+    #header-global .navbar-header-global .navbar-ul-global {
+      filter: none; }
+      #header-global .navbar-header-global .navbar-ul-global .navbar-li-global {
+        color: #141414; }
+        #header-global .navbar-header-global .navbar-ul-global .navbar-li-global .navbar-a-global {
+          color: #141414; }
+          #header-global .navbar-header-global .navbar-ul-global .navbar-li-global .navbar-a-global::after {
+            content: '';
+            height: 3px;
+            width: 0%;
+            background: #3a3ada;
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            transition: 0.5s; }
+          #header-global .navbar-header-global .navbar-ul-global .navbar-li-global .navbar-a-global:hover::after {
+            width: 15%; }
+          #header-global .navbar-header-global .navbar-ul-global .navbar-li-global .navbar-a-global:focus {
+            color: #3a3ada; }
+          #header-global .navbar-header-global .navbar-ul-global .navbar-li-global .navbar-a-global:target {
+            color: #3a3ada; } }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   #header-global {
