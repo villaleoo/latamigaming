@@ -102,7 +102,7 @@ html {
       color: #141414; }
       #header-home .navbar-header-home.bottom .logo-home .logo-img-home {
         filter: none; }
-      #header-home .navbar-header-home.bottom .logo-home h2, #header-home .navbar-header-home.bottom .logo-home html body h3, html body #header-home .navbar-header-home.bottom .logo-home h3, #header-home .navbar-header-home.bottom .logo-home html body h4, html body #header-home .navbar-header-home.bottom .logo-home h4, #header-home .navbar-header-home.bottom .logo-home html body h5, html body #header-home .navbar-header-home.bottom .logo-home h5, #header-home .navbar-header-home.bottom .logo-home html body h6, html body #header-home .navbar-header-home.bottom .logo-home h6 {
+      #header-home .navbar-header-home.bottom .logo-home h2 {
         color: #141414 !important; }
     #header-home .navbar-header-home.bottom .navbar-ul-home .navbar-li-home .navbar-a-home {
       color: #141414; }
@@ -243,7 +243,7 @@ html {
       padding: 0;
       text-align: center;
       margin: 0; }
-      .padreHome .contenidoHome .contenedorContenido h2, .padreHome .contenidoHome .contenedorContenido html body h3, html body .padreHome .contenidoHome .contenedorContenido h3, .padreHome .contenidoHome .contenedorContenido html body h4, html body .padreHome .contenidoHome .contenedorContenido h4, .padreHome .contenidoHome .contenedorContenido html body h5, html body .padreHome .contenidoHome .contenedorContenido h5, .padreHome .contenidoHome .contenedorContenido html body h6, html body .padreHome .contenidoHome .contenedorContenido h6 {
+      .padreHome .contenidoHome .contenedorContenido h2 {
         margin-bottom: 100px;
         margin-top: 20px;
         font-weight: bolder;
@@ -305,16 +305,15 @@ html {
       display: flex;
       align-items: center;
       height: 300px;
-      width: 450px;
-      padding: 20px;
+      width: 490px;
       margin: 10px 30px; }
       .contenedorServicios .padreServicios .contenidoServicios .imgServicios {
         width: min-content;
         height: min-content; }
         .contenedorServicios .padreServicios .contenidoServicios .imgServicios img {
-          width: 180px;
-          height: 180px;
-          border-radius: 100px; }
+          width: 260px;
+          height: 260px;
+          border-radius: 50%; }
       .contenedorServicios .padreServicios .contenidoServicios .textoServicios .listaServicios {
         margin: 0 0 0 40px;
         color: rgba(0, 0, 0, 0.87);
@@ -547,7 +546,7 @@ html {
     height: 60%;
     margin: 50px 0 0 0;
     padding: 0; }
-    .footer .padreFooter h2, .footer .padreFooter html body h3, html body .footer .padreFooter h3, .footer .padreFooter html body h4, html body .footer .padreFooter h4, .footer .padreFooter html body h5, html body .footer .padreFooter h5, .footer .padreFooter html body h6, html body .footer .padreFooter h6 {
+    .footer .padreFooter h2 {
       color: white;
       text-shadow: 0px 5px 5px black; }
   .footer .copyright {
@@ -571,7 +570,7 @@ html {
     html body h1 {
       font-size: 2rem;
       font-weight: bold; }
-    html body h2, html body h3, html body h4, html body h5, html body h6 {
+    html body h2 {
       font-size: 1rem;
       font-weight: bold; }
     html body h5 {
@@ -579,21 +578,30 @@ html {
       font-weight: bold; }
   .padreHome .contenidoHome .contenedorContenido .detallesTitulos-home {
     top: 90px; }
-  .padreHome .contenidoHome .contenedorContenido h2, .padreHome .contenidoHome .contenedorContenido html body h3, html body .padreHome .contenidoHome .contenedorContenido h3, .padreHome .contenidoHome .contenedorContenido html body h4, html body .padreHome .contenidoHome .contenedorContenido h4, .padreHome .contenidoHome .contenedorContenido html body h5, html body .padreHome .contenidoHome .contenedorContenido h5, .padreHome .contenidoHome .contenedorContenido html body h6, html body .padreHome .contenidoHome .contenedorContenido h6 {
-    font-size: 1.25rem; } }
+  .padreHome .contenidoHome .contenedorContenido h2 {
+    font-size: 1.25rem; }
+  .titulosSecciones h6 {
+    font-size: 0.875rem;
+    font-weight: bold; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   html body p {
     font-size: smaller; }
-  .titulosSecciones h2, .titulosSecciones html body h3, html body .titulosSecciones h3, .titulosSecciones html body h4, html body .titulosSecciones h4, .titulosSecciones html body h5, html body .titulosSecciones h5, .titulosSecciones html body h6, html body .titulosSecciones h6 {
+  .titulosSecciones h2 {
     font-size: 1.2rem;
+    font-weight: bold; }
+  .titulosSecciones h6 {
+    font-size: 1rem;
     font-weight: bold; } }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   html body p {
     font-size: smaller; }
-  .titulosSecciones h2, .titulosSecciones html body h3, html body .titulosSecciones h3, .titulosSecciones html body h4, html body .titulosSecciones h4, .titulosSecciones html body h5, html body .titulosSecciones h5, .titulosSecciones html body h6, html body .titulosSecciones h6 {
+  .titulosSecciones h2 {
     font-size: 1.4rem;
+    font-weight: bold; }
+  .titulosSecciones h6 {
+    font-size: 1rem;
     font-weight: bold; } }
 
 @media only screen and (min-width: 0px) and (max-width: 1024px) {
@@ -769,7 +777,7 @@ html {
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .footer {
     height: 50vh; }
-    .footer .padreFooter h2, .footer .padreFooter html body h3, html body .footer .padreFooter h3, .footer .padreFooter html body h4, html body .footer .padreFooter h4, .footer .padreFooter html body h5, html body .footer .padreFooter h5, .footer .padreFooter html body h6, html body .footer .padreFooter h6 {
+    .footer .padreFooter h2 {
       font-size: x-large; }
     .footer .padreFooter img {
       width: 42px;

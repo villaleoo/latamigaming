@@ -37,16 +37,15 @@
             display: flex;
             align-items: center;
             height: 300px;
-            width: 450px;
-            padding: 20px;
+            width: 490px;
             margin:10px 30px;
             .imgServicios{
                 width: min-content;
                 height: min-content;
                 img{
-                    width: 180px;
-                    height: 180px;
-                    border-radius: 100px;
+                    width: 260px;
+                    height: 260px;
+                    border-radius: 50%;
                 }
             }
             .textoServicios{

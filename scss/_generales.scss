@@ -27,21 +27,10 @@ html{
         .row{
             margin:0;
         }
-        h2{
+        h2,h3,h4,h5,h6{
             color:black;
         }
-        h3{
-            @extend h2;
-        }
-        h4{
-            @extend h2;
-        }
-        h5{
-            @extend h2;
-        }
-        h6{
-            @extend h2;
-        }
+
         .titulosSecciones{
             text-align: center;
             margin: 20px 0 0 0;
