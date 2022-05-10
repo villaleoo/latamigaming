@@ -246,7 +246,8 @@ html {
       .padreHome .contenidoHome .contenedorContenido h2, .padreHome .contenidoHome .contenedorContenido html body h3, html body .padreHome .contenidoHome .contenedorContenido h3, .padreHome .contenidoHome .contenedorContenido html body h4, html body .padreHome .contenidoHome .contenedorContenido h4, .padreHome .contenidoHome .contenedorContenido html body h5, html body .padreHome .contenidoHome .contenedorContenido h5, .padreHome .contenidoHome .contenedorContenido html body h6, html body .padreHome .contenidoHome .contenedorContenido h6 {
         margin-bottom: 100px;
         margin-top: 20px;
-        font-weight: bolder; }
+        font-weight: bolder;
+        font-size: 1.5rem; }
       .padreHome .contenidoHome .contenedorContenido .detallesTitulos {
         top: 90px; }
       .padreHome .contenidoHome .contenedorContenido .servicioPrincipal {
@@ -263,7 +264,8 @@ html {
           align-items: center;
           justify-content: center; }
           .padreHome .contenidoHome .contenedorContenido .servicioPrincipal .content h5 {
-            margin: 20px 0; }
+            margin: 20px 0;
+            font-size: 1rem; }
         .padreHome .contenidoHome .contenedorContenido .servicioPrincipal .servicioImg {
           display: flex;
           align-items: center;
@@ -546,18 +548,28 @@ html {
     html body h1 {
       font-size: 2rem; }
     html body h2, html body h3, html body h4, html body h5, html body h6 {
-      font-size: 1.125rem; }
+      font-size: 1rem; }
     html body h5 {
-      font-size: 1rem;
-      font-weight: bold; } }
+      font-size: 0.875rem;
+      font-weight: bold; }
+  .padreHome .contenidoHome .contenedorContenido .detallesTitulos-home {
+    top: 90px; }
+  .padreHome .contenidoHome .contenedorContenido h2, .padreHome .contenidoHome .contenedorContenido html body h3, html body .padreHome .contenidoHome .contenedorContenido h3, .padreHome .contenidoHome .contenedorContenido html body h4, html body .padreHome .contenidoHome .contenedorContenido h4, .padreHome .contenidoHome .contenedorContenido html body h5, html body .padreHome .contenidoHome .contenedorContenido h5, .padreHome .contenidoHome .contenedorContenido html body h6, html body .padreHome .contenidoHome .contenedorContenido h6 {
+    font-size: 1.25rem; } }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   html body p {
-    font-size: smaller; } }
+    font-size: smaller; }
+  .titulosSecciones h2, .titulosSecciones html body h3, html body .titulosSecciones h3, .titulosSecciones html body h4, html body .titulosSecciones h4, .titulosSecciones html body h5, html body .titulosSecciones h5, .titulosSecciones html body h6, html body .titulosSecciones h6 {
+    font-size: 1.2rem;
+    font-weight: bold; } }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   html body p {
-    font-size: smaller; } }
+    font-size: smaller; }
+  .titulosSecciones h2, .titulosSecciones html body h3, html body .titulosSecciones h3, .titulosSecciones html body h4, html body .titulosSecciones h4, .titulosSecciones html body h5, html body .titulosSecciones h5, .titulosSecciones html body h6, html body .titulosSecciones h6 {
+    font-size: 1.4rem;
+    font-weight: bold; } }
 
 @media only screen and (min-width: 0px) and (max-width: 1024px) {
   #header-home {
