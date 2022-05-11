@@ -1,8 +1,43 @@
 //MOBILE
 @media only screen and (min-width:0px) and (max-width:768px){
-    
+    .contenedorContenido{
+        .servicioPrincipal{
+            .container{
+                .content{
+                    h5{
+                        text-align: center;
+                    }
+                    p{
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+    .padreHome {
+        .contenidoHome{
+            .contenedorContenido{
+                h2{
+                    margin-bottom: 20%;
+                }
+            }
+        }
+    } 
 }
 //LAPTOP
 @media only screen and (min-width:1024px) and (max-width:1440px){
-
+    .contenedorContenido{
+        .servicioPrincipal{
+            .container{
+                .content{
+                    h5{
+                        text-align: center;
+                    }
+                    p{
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
 }
