@@ -1,7 +1,8 @@
 //MOBILE
-@media only screen and (min-width:0px) and (max-width:1024px){
+@media only screen and (min-width:0px) and (max-width:768px){
     #header-home{
         height: 100vh;
+        
         .navbar-header-home{
             z-index: 1;
             transition: none;
@@ -39,8 +40,9 @@
             }
         }
         .content{
-            margin-top: 12rem;
+            margin-top: 10%;
             text-align: center;
+            height: 100%;
             .links{
                 margin-top: 1.875rem;
                 .btnLink{
@@ -56,15 +58,17 @@
         color: #141414;
     }
     .contenidoHome .contenedorContenido .servicioPrincipal{
+        
         padding: 0;
         margin-bottom: 1.875rem;
     }
 }
 //LAPTOP
-@media only screen and (min-width:0px) and (max-width:812px){
+@media only screen and (min-width:1024px) and (max-width:1440px){
     #header-home{
             .content{
-                margin-top: 15rem;
+                margin-top: 0;
+                height: 100%;
                 text-align: center;
             }
     }

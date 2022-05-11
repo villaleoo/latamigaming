@@ -47,7 +47,7 @@ html {
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../assets/igaming-latam-consulting.png) !important;
   background-position: center;
   background-size: cover;
-  overflow-x: hidden; }
+  overflow: hidden; }
   #header-home .navbar-header-home {
     width: 100%;
     display: flex;
@@ -602,7 +602,7 @@ html {
     font-size: 1rem;
     font-weight: bold; } }
 
-@media only screen and (min-width: 0px) and (max-width: 1024px) {
+@media only screen and (min-width: 0px) and (max-width: 768px) {
   #header-home {
     height: 100vh; }
     #header-home .navbar-header-home {
@@ -633,8 +633,9 @@ html {
             #header-home .navbar-header-home .navbar-ul-home .navbar-li-home .navbar-a-home:target {
               color: #3a3ada; }
     #header-home .content {
-      margin-top: 12rem;
-      text-align: center; }
+      margin-top: 10%;
+      text-align: center;
+      height: 100%; }
       #header-home .content .links {
         margin-top: 1.875rem; }
         #header-home .content .links .btnLink {
@@ -647,9 +648,10 @@ html {
     padding: 0;
     margin-bottom: 1.875rem; } }
 
-@media only screen and (min-width: 0px) and (max-width: 812px) {
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
   #header-home .content {
-    margin-top: 15rem;
+    margin-top: 0;
+    height: 100%;
     text-align: center; } }
 
 @media only screen and (min-width: 0px) and (max-width: 1024px) {
@@ -698,8 +700,10 @@ html {
     text-align: center; }
   .contenedorContenido .servicioPrincipal .container .content p {
     text-align: justify; }
-  .padreHome .contenidoHome .contenedorContenido h2 {
-    margin-bottom: 20%; } }
+  .padreHome .contenidoHome {
+    padding: 0; }
+    .padreHome .contenidoHome .contenedorContenido h2 {
+      margin-bottom: 20%; } }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .contenedorContenido .servicioPrincipal .container .content h5 {
