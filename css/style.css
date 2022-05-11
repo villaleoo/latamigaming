@@ -695,6 +695,20 @@ html {
           width: min-content; } }
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
+  .contenedorContenido .servicioPrincipal .container .content h5 {
+    text-align: center; }
+  .contenedorContenido .servicioPrincipal .container .content p {
+    text-align: justify; }
+  .padreHome .contenidoHome .contenedorContenido h2 {
+    margin-bottom: 20%; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .contenedorContenido .servicioPrincipal .container .content h5 {
+    text-align: center; }
+  .contenedorContenido .servicioPrincipal .container .content p {
+    text-align: justify; } }
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
   .contenedorNosotros {
     margin: 0;
     margin: 70px 0 30px 0;
