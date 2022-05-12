@@ -452,43 +452,43 @@ html {
       line-height: 24px;
       font-size: 14px;
       margin-bottom: 0; }
-  .contenedorContacto .section-contact .php-email-form {
+  .contenedorContacto .section-contact .contact-email-form {
     box-shadow: 0 0 30px rgba(214, 215, 216, 0.4);
     padding: 30px; }
-    .contenedorContacto .section-contact .php-email-form .error-mensaje {
+    .contenedorContacto .section-contact .contact-email-form .form-group {
+      margin-bottom: 20px; }
+    .contenedorContacto .section-contact .contact-email-form .loading-message .loading {
+      display: none;
+      background: #fff;
+      text-align: center;
+      padding: 15px; }
+      .contenedorContacto .section-contact .contact-email-form .loading-message .loading::before {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        margin: 0 10px -6px 0;
+        border: 3px solid #18d26e;
+        border-top-color: #eee;
+        -webkit-animation: animate-loading 1s linear infinite;
+        animation: animate-loading 1s linear infinite; }
+    .contenedorContacto .section-contact .contact-email-form .loading-message .error-message {
       display: none;
       color: #fff;
       background: #ed3c0d;
       text-align: left;
       padding: 15px;
       font-weight: 600; }
-      .contenedorContacto .section-contact .php-email-form .error-mensaje br + br {
+      .contenedorContacto .section-contact .contact-email-form .loading-message .error-message br + br {
         margin-top: 25px; }
-    .contenedorContacto .section-contact .php-email-form .enviar-mensaje {
+    .contenedorContacto .section-contact .contact-email-form .loading-message .sent-message {
       display: none;
       color: #fff;
       background: #18d26e;
       text-align: center;
       padding: 15px;
       font-weight: 600; }
-  .contenedorContacto .section-contact .loading {
-    display: none;
-    background: #fff;
-    text-align: center;
-    padding: 15px; }
-    .contenedorContacto .section-contact .loading::before {
-      content: "";
-      display: inline-block;
-      border-radius: 50%;
-      width: 24px;
-      height: 24px;
-      margin: 0 10px -6px 0;
-      border: 3px solid #18d26e;
-      border-top-color: #eee;
-      -webkit-animation: animate-loading 1s linear infinite;
-      animation: animate-loading 1s linear infinite; }
-  .contenedorContacto .section-contact .form-group {
-    margin-bottom: 20px; }
   .contenedorContacto .section-contact input {
     border-radius: 0;
     box-shadow: none;
@@ -503,14 +503,14 @@ html {
     padding: 12px 15px; }
     .contenedorContacto .section-contact textarea:focus {
       border-color: #141414; }
-  .contenedorContacto .section-contact button[type=submit] {
+  .contenedorContacto .section-contact button[type="submit"] {
     background: #141414;
     border: 0;
     padding: 10px 30px;
     color: #fff;
     transition: 0.4s;
     border-radius: 4px; }
-    .contenedorContacto .section-contact button[type=submit]:hover {
+    .contenedorContacto .section-contact button[type="submit"]:hover {
       background: #777777; }
 
 @-webkit-keyframes animate-loading {
@@ -792,6 +792,7 @@ html {
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .contenedorServicios {
+<<<<<<< HEAD
     padding: 0 8%; }
     .contenedorServicios p {
       font-size: small; }
@@ -828,6 +829,17 @@ html {
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .contenedorServicios .info-services {
     margin-top: 50px; } }
+=======
+    padding: 0 30px 0 30px; }
+    .contenedorServicios .padreServicios {
+      border-radius: 0px; } }
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .contenedorServicios {
+    padding: 0 30px 0 30px; }
+    .contenedorServicios .padreServicios {
+      border-radius: 0px; } }
+>>>>>>> 27855bdb201fac509f1232c372f6f3221a4d6d67
 
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   .footer {
