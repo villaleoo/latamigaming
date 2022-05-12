@@ -453,6 +453,43 @@ html {
       line-height: 24px;
       font-size: 14px;
       margin-bottom: 0; }
+  .contenedorContacto .section-contact .contact-email-form {
+    box-shadow: 0 0 30px rgba(214, 215, 216, 0.4);
+    padding: 30px; }
+    .contenedorContacto .section-contact .contact-email-form .form-group {
+      margin-bottom: 20px; }
+    .contenedorContacto .section-contact .contact-email-form .loading-message .loading {
+      display: none;
+      background: #fff;
+      text-align: center;
+      padding: 15px; }
+      .contenedorContacto .section-contact .contact-email-form .loading-message .loading::before {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        margin: 0 10px -6px 0;
+        border: 3px solid #18d26e;
+        border-top-color: #eee;
+        -webkit-animation: animate-loading 1s linear infinite;
+        animation: animate-loading 1s linear infinite; }
+    .contenedorContacto .section-contact .contact-email-form .loading-message .error-message {
+      display: none;
+      color: #fff;
+      background: #ed3c0d;
+      text-align: left;
+      padding: 15px;
+      font-weight: 600; }
+      .contenedorContacto .section-contact .contact-email-form .loading-message .error-message br + br {
+        margin-top: 25px; }
+    .contenedorContacto .section-contact .contact-email-form .loading-message .sent-message {
+      display: none;
+      color: #fff;
+      background: #18d26e;
+      text-align: center;
+      padding: 15px;
+      font-weight: 600; }
   .contenedorContacto .section-contact input {
     border-radius: 0;
     box-shadow: none;
@@ -477,45 +514,17 @@ html {
     .contenedorContacto .section-contact button[type="submit"]:hover {
       background: #777777; }
 
-.contact-email-form .contact-form-response {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  color: #000000; }
-
-.contact-email-form .contact-form-error {
-  margin-top: -1rem;
-  font-size: 80%;
-  background-color: red;
-  color: #fff;
-  transition: all 800ms ease; }
-  .contact-email-form .contact-form-error .is-active {
-    display: block;
-    animation: show-mesage 1s 1 normal 0s ease-out both; }
-
-.contact-email-form .contact-email-form [required]:valid {
-  border: thin solid green !important; }
-
-.contact-email-form .contact-email-form [required]:invalid {
-  border: thin solid red !important; }
-
-.contact-email-form .contact-form-error.is-active {
-  display: block;
-  animation: show-mesage 1s 1 normal 0s ease-out both; }
-
-.contact-email-form .none {
-  display: none; }
-
-.contact-email-form .contact-form-loader {
-  text-align: center; }
-
-@keyframes show-mesage {
+@-webkit-keyframes animate-loading {
   0% {
-    visibility: hidden;
-    opacity: 0; }
+    transform: rotate(0deg); }
   100% {
-    visibility: visible;
-    opacity: 1; } }
+    transform: rotate(360deg); } }
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 .footer {
   background-color: black;
