@@ -35,53 +35,6 @@
         margin-bottom: 0;
       }
     }
-    .contact-email-form {
-      box-shadow: 0 0 30px rgba(214, 215, 216, 0.4);
-      padding: 30px;
-      .form-group {
-        margin-bottom: 20px;
-      }
-      .loading-message {
-        .loading {
-          display: none;
-          background: #fff;
-          text-align: center;
-          padding: 15px;
-          &::before {
-            content: "";
-            display: inline-block;
-            border-radius: 50%;
-            width: 24px;
-            height: 24px;
-            margin: 0 10px -6px 0;
-            border: 3px solid #18d26e;
-            border-top-color: #eee;
-            -webkit-animation: animate-loading 1s linear infinite;
-            animation: animate-loading 1s linear infinite;
-          }
-        }
-        .error-message {
-          display: none;
-          color: #fff;
-          background: #ed3c0d;
-          text-align: left;
-          padding: 15px;
-          font-weight: 600;
-          br + br {
-            margin-top: 25px;
-          }
-        }
-        .sent-message {
-          display: none;
-          color: #fff;
-          background: #18d26e;
-          text-align: center;
-          padding: 15px;
-          font-weight: 600;
-        }
-      }
-    }
-
     input {
       border-radius: 0;
       box-shadow: none;
@@ -111,22 +64,54 @@
         background: #777777;
       }
     }
+    
   }
 }
-
-@-webkit-keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
+.contact-email-form{
+  .contact-form-response{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
   }
-  100% {
-    transform: rotate(360deg);
+  .contact-form-error{
+    margin-top: -1rem;
+    font-size: 80%;
+    background-color: red;
+    color: #fff;
+    transition: all 800ms ease;
+    .is-active{
+      display: block;
+      animation: show-mesage 1s 1 normal 0s ease-out both;
+    }
+  }
+  .contact-email-form [required]:valid{
+    border:thin solid green !important;
+  }
+  .contact-email-form [required]:invalid{
+    border:thin solid red !important;
+  }
+  .contact-form-error.is-active{
+    display: block;
+    animation: show-mesage 1s 1 normal 0s ease-out both;
+  }
+  .none{
+    display: none;
+  }
+  .contact-form-loader{
+    text-align: center;
+  }
+  .message-sent{
+    text-align: center;
   }
 }
-@keyframes animate-loading {
-  0% {
-    transform: rotate(0deg);
+@keyframes show-mesage{
+  0%{
+    visibility: hidden;
+    opacity: 0;
   }
-  100% {
-    transform: rotate(360deg);
+  100%{
+    visibility: visible;
+    opacity: 1;
   }
 }
