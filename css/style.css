@@ -531,7 +531,8 @@ html {
   width: 100%;
   text-align: center;
   position: relative;
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
   .footer .padreFooter {
     display: flex;
     align-items: center;
